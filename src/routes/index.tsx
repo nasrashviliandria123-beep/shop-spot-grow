@@ -1,15 +1,15 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { Phone, Star, ChevronRight, Clock, MapPin, ArrowRight } from "lucide-react";
-import heroBakery from "../assets/hero-bakery.jpg";
+import heroKhachapuri from "../assets/hero-khachapuri.jpg";
 
 
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Bakers Bros | Artisan Cafe & Bakery in Saguramo" },
-      { name: "description", content: "Freshly baked artisan breads, pastries & specialty coffee in Saguramo. Visit Bakers Bros for the best bakery experience. Custom orders available." },
-      { property: "og:title", content: "Bakers Bros | Artisan Cafe & Bakery in Saguramo" },
-      { property: "og:description", content: "Freshly baked artisan breads, pastries & specialty coffee. Visit us or call for custom orders." },
+      { title: "Bakers Bros | Cafe-Bakery in Saguramo" },
+      { name: "description", content: "Fresh khachapuri, pastries & specialty coffee in Saguramo. Visit Bakers Bros for the best Georgian cafe-bakery experience. Custom orders available." },
+      { property: "og:title", content: "Bakers Bros | Cafe-Bakery in Saguramo" },
+      { property: "og:description", content: "Fresh khachapuri, pastries & specialty coffee. Visit us or call for custom orders." },
       { property: "og:url", content: "/" },
     ],
   }),
@@ -23,8 +23,8 @@ function HomePage() {
       <section className="relative overflow-hidden">
         <div className="absolute inset-0">
           <img
-            src={heroBakery}
-            alt="Bakers Bros artisan bakery interior"
+            src={heroKhachapuri}
+            alt="Acharuli khachapuri fresh from the oven"
             className="h-full w-full object-cover"
             style={{ filter: "brightness(0.5)" }}
           />
@@ -42,7 +42,7 @@ function HomePage() {
               Freshly Baked, Made with Love
             </h1>
             <p className="mt-5 text-lg leading-relaxed text-cream/90 text-balance">
-              Artisan breads, flaky pastries & specialty coffee at Bakers Bros.
+              Authentic khachapuri, flaky pastries & specialty coffee at Bakers Bros.
               Your neighborhood cafe-bakery in Saguramo — where every bite feels like home.
             </p>
             <div className="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row">

@@ -1,6 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { MapPin, Clock, Phone, Award, Users, Heart, ArrowRight } from "lucide-react";
-import heroBakery from "../assets/hero-bakery.jpg";
+import heroKhachapuri from "../assets/hero-khachapuri.jpg";
 
 export const Route = createFileRoute("/about")({
   head: () => ({
@@ -25,8 +25,8 @@ function AboutPage() {
             About Bakers Bros
           </h1>
           <p className="mx-auto mt-4 max-w-2xl text-muted-foreground text-balance">
-            A family-run cafe-bakery bringing the warmth of fresh-baked goods to Saguramo.
-            Every loaf, every pastry, every cup of coffee is made with passion.
+            A family-run cafe-bakery bringing the warmth of Georgian flavors to Saguramo.
+            Every khachapuri, every pastry, every cup of coffee is made with passion.
           </p>
         </div>
       </section>
@@ -37,8 +37,8 @@ function AboutPage() {
           <div className="grid items-center gap-10 lg:grid-cols-2">
             <div>
               <img
-                src={heroBakery}
-                alt="Bakers Bros bakery interior"
+                src={heroKhachapuri}
+                alt="Acharuli khachapuri fresh from the oven"
                 loading="lazy"
                 className="rounded-2xl object-cover shadow-lg"
               />
@@ -49,13 +49,13 @@ function AboutPage() {
               </h2>
               <p className="mt-4 leading-relaxed text-muted-foreground text-balance">
                 Bakers Bros started as a small home kitchen with a dream: to bring authentic, handcrafted 
-                baked goods to our community. What began as weekend bread sales at local markets grew into 
+                Georgian flavors to our community. What began as weekend khachapuri sales at local markets grew into 
                 the cozy cafe-bakery you see today.
               </p>
               <p className="mt-4 leading-relaxed text-muted-foreground text-balance">
-                We believe that great food starts with great ingredients. That's why we source local flour, 
-                farm-fresh eggs, and real butter — no shortcuts, no preservatives. Our sourdough starter 
-                has been lovingly maintained for years, giving every loaf its unique depth of flavor.
+                We believe that great food starts with great ingredients. That's why we source local cheese, 
+                farm-fresh eggs, and real butter — no shortcuts, no preservatives. Our dough is made fresh daily, 
+                giving every khachapuri its unique depth of flavor.
               </p>
               <p className="mt-4 leading-relaxed text-muted-foreground text-balance">
                 Located on 1li Street in Saguramo, we're proud to be part of this community. Whether 
