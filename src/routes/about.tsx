@@ -37,8 +37,8 @@ function AboutPage() {
           <div className="grid items-center gap-10 lg:grid-cols-2">
             <div>
               <img
-                src={heroBakery}
-                alt="Bakers Bros bakery interior"
+                src={heroKhachapuri}
+                alt="Acharuli khachapuri fresh from the oven"
                 loading="lazy"
                 className="rounded-2xl object-cover shadow-lg"
               />
