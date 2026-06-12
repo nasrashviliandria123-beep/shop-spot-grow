@@ -70,62 +70,6 @@ function HomePage() {
         </div>
       </section>
 
-      {/* Services Overview */}
-      <section className="section-padding bg-background">
-        <div className="mx-auto max-w-7xl px-4 md:px-6">
-          <div className="mx-auto max-w-2xl text-center">
-            <h2 className="text-3xl font-bold text-foreground md:text-4xl text-balance" style={{ fontFamily: "'Lora', serif" }}>
-              What We Offer
-            </h2>
-            <p className="mt-3 text-muted-foreground text-balance">
-              From morning coffee runs to celebration cakes — everything fresh, everything handmade.
-            </p>
-          </div>
-          <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-            <ServiceCard
-              icon={<Coffee className="h-6 w-6" />}
-              title="Specialty Coffee"
-              description="Espresso, lattes & cold brews crafted from premium beans. Perfect with our pastries."
-            />
-            <ServiceCard
-              icon={<Utensils className="h-6 w-6" />}
-              title="Artisan Bread"
-              description="Sourdough, whole grain & traditional loaves baked fresh every morning."
-            />
-            <ServiceCard
-              icon={<Cake className="h-6 w-6" />}
-              title="Custom Cakes"
-              description="Birthday, wedding & celebration cakes made to order. Gluten-free options available."
-            />
-            <ServiceCard
-              icon={<PartyPopper className="h-6 w-6" />}
-              title="Catering"
-              description="Office meetings, family gatherings & events. Platters, pastries & coffee delivered."
-            />
-          </div>
-        </div>
-      </section>
-
-      {/* Photo Gallery */}
-      <section className="section-padding bg-muted/30">
-        <div className="mx-auto max-w-7xl px-4 md:px-6">
-          <div className="mx-auto max-w-2xl text-center">
-            <h2 className="text-3xl font-bold text-foreground md:text-4xl text-balance" style={{ fontFamily: "'Lora', serif" }}>
-              From Our Kitchen
-            </h2>
-            <p className="mt-3 text-muted-foreground text-balance">
-              A glimpse of what we create daily — no shortcuts, just passion.
-            </p>
-          </div>
-          <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-            <GalleryCard src={pastriesImg} alt="Fresh croissants and Danish pastries" label="Croissants & Pastries" />
-            <GalleryCard src={breadImg} alt="Artisan sourdough bread loaf" label="Artisan Breads" />
-            <GalleryCard src={coffeeImg} alt="Latte art coffee with croissant" label="Specialty Coffee" />
-            <GalleryCard src={sweetsImg} alt="Colorful macarons and small cakes" label="Macarons & Cakes" />
-          </div>
-        </div>
-      </section>
-
       {/* Testimonials */}
       <section className="section-padding bg-background">
         <div className="mx-auto max-w-7xl px-4 md:px-6">
