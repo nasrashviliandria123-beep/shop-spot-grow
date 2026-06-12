@@ -23,8 +23,8 @@ function HomePage() {
       <section className="relative overflow-hidden">
         <div className="absolute inset-0">
           <img
-            src={heroBakery}
-            alt="Bakers Bros artisan bakery interior"
+            src={heroKhachapuri}
+            alt="Acharuli khachapuri fresh from the oven"
             className="h-full w-full object-cover"
             style={{ filter: "brightness(0.5)" }}
           />
@@ -42,7 +42,7 @@ function HomePage() {
               Freshly Baked, Made with Love
             </h1>
             <p className="mt-5 text-lg leading-relaxed text-cream/90 text-balance">
-              Artisan breads, flaky pastries & specialty coffee at Bakers Bros.
+              Authentic khachapuri, flaky pastries & specialty coffee at Bakers Bros.
               Your neighborhood cafe-bakery in Saguramo — where every bite feels like home.
             </p>
             <div className="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row">
