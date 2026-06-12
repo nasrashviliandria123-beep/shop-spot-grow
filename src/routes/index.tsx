@@ -6,10 +6,10 @@ import heroKhachapuri from "../assets/hero-khachapuri.jpg";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Bakers Bros | Artisan Cafe & Bakery in Saguramo" },
-      { name: "description", content: "Freshly baked artisan breads, pastries & specialty coffee in Saguramo. Visit Bakers Bros for the best bakery experience. Custom orders available." },
-      { property: "og:title", content: "Bakers Bros | Artisan Cafe & Bakery in Saguramo" },
-      { property: "og:description", content: "Freshly baked artisan breads, pastries & specialty coffee. Visit us or call for custom orders." },
+      { title: "Bakers Bros | Cafe-Bakery in Saguramo" },
+      { name: "description", content: "Fresh khachapuri, pastries & specialty coffee in Saguramo. Visit Bakers Bros for the best Georgian cafe-bakery experience. Custom orders available." },
+      { property: "og:title", content: "Bakers Bros | Cafe-Bakery in Saguramo" },
+      { property: "og:description", content: "Fresh khachapuri, pastries & specialty coffee. Visit us or call for custom orders." },
       { property: "og:url", content: "/" },
     ],
   }),
