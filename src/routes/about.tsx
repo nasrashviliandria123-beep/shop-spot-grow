@@ -49,13 +49,13 @@ function AboutPage() {
               </h2>
               <p className="mt-4 leading-relaxed text-muted-foreground text-balance">
                 Bakers Bros started as a small home kitchen with a dream: to bring authentic, handcrafted 
-                baked goods to our community. What began as weekend bread sales at local markets grew into 
+                Georgian flavors to our community. What began as weekend khachapuri sales at local markets grew into 
                 the cozy cafe-bakery you see today.
               </p>
               <p className="mt-4 leading-relaxed text-muted-foreground text-balance">
-                We believe that great food starts with great ingredients. That's why we source local flour, 
-                farm-fresh eggs, and real butter — no shortcuts, no preservatives. Our sourdough starter 
-                has been lovingly maintained for years, giving every loaf its unique depth of flavor.
+                We believe that great food starts with great ingredients. That's why we source local cheese, 
+                farm-fresh eggs, and real butter — no shortcuts, no preservatives. Our dough is made fresh daily, 
+                giving every khachapuri its unique depth of flavor.
               </p>
               <p className="mt-4 leading-relaxed text-muted-foreground text-balance">
                 Located on 1li Street in Saguramo, we're proud to be part of this community. Whether 
