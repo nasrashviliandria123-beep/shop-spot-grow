@@ -124,34 +124,6 @@ function HomePage() {
   );
 }
 
-function ServiceCard({ icon, title, description }: { icon: React.ReactNode; title: string; description: string }) {
-  return (
-    <div className="rounded-xl border border-border bg-card p-6 text-card-foreground shadow-sm transition-all hover:shadow-md">
-      <div className="mb-4 inline-flex rounded-lg bg-primary/10 p-3 text-primary">
-        {icon}
-      </div>
-      <h3 className="text-lg font-semibold" style={{ fontFamily: "'Lora', serif" }}>{title}</h3>
-      <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{description}</p>
-    </div>
-  );
-}
-
-function GalleryCard({ src, alt, label }: { src: string; alt: string; label: string }) {
-  return (
-    <div className="group relative overflow-hidden rounded-xl">
-      <img
-        src={src}
-        alt={alt}
-        loading="lazy"
-        className="aspect-[4/3] w-full object-cover transition-transform duration-500 group-hover:scale-105"
-      />
-      <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
-      <div className="absolute bottom-0 left-0 p-4">
-        <span className="text-sm font-semibold text-white">{label}</span>
-      </div>
-    </div>
-  );
-}
 
 function TestimonialCard({ name, rating, text }: { name: string; rating: number; text: string }) {
   return (
