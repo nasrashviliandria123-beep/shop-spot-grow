@@ -25,8 +25,8 @@ function AboutPage() {
             About Bakers Bros
           </h1>
           <p className="mx-auto mt-4 max-w-2xl text-muted-foreground text-balance">
-            A family-run cafe-bakery bringing the warmth of fresh-baked goods to Saguramo.
-            Every loaf, every pastry, every cup of coffee is made with passion.
+            A family-run cafe-bakery bringing the warmth of Georgian flavors to Saguramo.
+            Every khachapuri, every pastry, every cup of coffee is made with passion.
           </p>
         </div>
       </section>
