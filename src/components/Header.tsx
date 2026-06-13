@@ -3,10 +3,10 @@ import { Link, useRouterState } from "@tanstack/react-router";
 import { Phone, Menu, X } from "lucide-react";
 
 const navLinks = [
-  { label: "Home", to: "/" },
-  { label: "Menu", to: "/menu" },
-  { label: "About", to: "/about" },
-  { label: "Contact", to: "/contact" },
+  { label: "მთავარი", to: "/" },
+  { label: "მენიუ", to: "/menu" },
+  { label: "ჩვენ შესახებ", to: "/about" },
+  { label: "კონტაქტი", to: "/contact" },
 ];
 
 export function Header() {
@@ -48,7 +48,7 @@ export function Header() {
             className="inline-flex items-center gap-2 rounded-md bg-primary px-4 py-2 text-sm font-semibold text-primary-foreground transition-colors hover:bg-primary/90"
           >
             <Phone className="h-4 w-4" />
-            Call Now
+            დარეკვა
           </a>
         </div>
 
@@ -56,7 +56,7 @@ export function Header() {
         <button
           onClick={() => setMobileOpen((o) => !o)}
           className="inline-flex items-center justify-center rounded-md p-2 text-foreground hover:bg-muted md:hidden"
-          aria-label="Toggle menu"
+          aria-label="მენიუს გახსნა"
         >
           {mobileOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
         </button>
@@ -85,7 +85,7 @@ export function Header() {
               className="mt-2 inline-flex items-center justify-center gap-2 rounded-md bg-primary px-4 py-3 text-sm font-semibold text-primary-foreground"
             >
               <Phone className="h-4 w-4" />
-              Call Now
+              დარეკვა
             </a>
           </nav>
         </div>

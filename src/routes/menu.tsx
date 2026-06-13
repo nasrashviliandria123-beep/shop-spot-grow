@@ -4,10 +4,10 @@ import { Coffee, Cookie, Pizza, Wheat, Leaf } from "lucide-react";
 export const Route = createFileRoute("/menu")({
   head: () => ({
     meta: [
-      { title: "Menu | Bakers Bros" },
-      { name: "description", content: "Authentic Georgian khachapuri, fresh pastries, pizza, specialty coffee and tea at Bakers Bros bakery in Saguramo." },
-      { property: "og:title", content: "Menu | Bakers Bros" },
-      { property: "og:description", content: "Khachapuri, pastries, pizza, coffee & tea — baked fresh daily." },
+      { title: "მენიუ | Bakers Bros" },
+      { name: "description", content: "ნამდვილი ქართული ხაჭაპური, ახალი ნამცხვრები, პიცა, საფირმო ყავა და ჩაი Bakers Bros საცხობში, საგურამოში." },
+      { property: "og:title", content: "მენიუ | Bakers Bros" },
+      { property: "og:description", content: "ხაჭაპური, ნამცხვრები, პიცა, ყავა და ჩაი — ახლადგამომცხვარი ყოველდღე." },
       { property: "og:url", content: "/menu" },
     ],
   }),
@@ -16,7 +16,7 @@ export const Route = createFileRoute("/menu")({
 
 const menuSections = [
   {
-    title: "ხაჭაპური & ცომეული / Khachapuri & Bread",
+    title: "ხაჭაპური და ცომეული",
     icon: <Wheat className="h-5 w-5" />,
     items: [
       { name: "იმერული ხაჭაპური (პატარა)", en: "Imeretian Khachapuri (small)", price: "12 ₾" },
@@ -42,7 +42,7 @@ const menuSections = [
     ],
   },
   {
-    title: "პიცა / Pizza",
+    title: "პიცა",
     icon: <Pizza className="h-5 w-5" />,
     items: [
       { name: "პიცა მარგარიტა", en: "Margherita", price: "19 ₾" },
@@ -53,7 +53,7 @@ const menuSections = [
     ],
   },
   {
-    title: "ტკბილეული / Pastries & Sweets",
+    title: "ტკბილეული",
     icon: <Cookie className="h-5 w-5" />,
     items: [
       { name: "შუ", en: "Choux", price: "4 ₾" },
@@ -75,7 +75,7 @@ const menuSections = [
     ],
   },
   {
-    title: "ყავა / Coffee",
+    title: "ყავა",
     icon: <Coffee className="h-5 w-5" />,
     items: [
       { name: "ყავა თურქული", en: "Turkish Coffee", price: "4 ₾" },
@@ -88,7 +88,7 @@ const menuSections = [
     ],
   },
   {
-    title: "ჩაი / Tea",
+    title: "ჩაი",
     icon: <Leaf className="h-5 w-5" />,
     items: [
       { name: "შავი ჩაი", en: "Black Tea", price: "2 ₾" },
@@ -107,13 +107,12 @@ function MenuPage() {
       <section className="border-b border-border bg-muted/20">
         <div className="section-padding mx-auto max-w-7xl px-4 text-center md:px-6">
           <h1 className="text-3xl font-bold text-foreground md:text-5xl text-balance" style={{ fontFamily: "'Lora', serif" }}>
-            Our Menu
+            ჩვენი მენიუ
           </h1>
           <p className="mx-auto mt-4 max-w-xl text-muted-foreground text-balance">
-            Authentic Georgian baking — khachapuri, fresh pastries, wood-fired pizza,
-            and specialty coffee. Baked fresh every morning.
+            ნამდვილი ქართული გამოცხობა — ხაჭაპური, ახალი ნამცხვრები, პიცა და საფირმო ყავა. ახლადგამომცხვარი ყოველ დილით.
           </p>
-          <p className="mt-2 text-sm font-medium text-primary">Average: 10–20 ₾ per person</p>
+          <p className="mt-2 text-sm font-medium text-primary">საშუალოდ: 10–20 ₾ ერთ პერსონაზე</p>
         </div>
       </section>
 
@@ -133,10 +132,7 @@ function MenuPage() {
                 <div className="space-y-3">
                   {section.items.map((item) => (
                     <div key={item.name} className="flex items-start justify-between gap-4 border-b border-border pb-3 last:border-b-0">
-                      <div>
-                        <h3 className="font-semibold text-foreground">{item.name}</h3>
-                        <p className="mt-0.5 text-sm text-muted-foreground">{item.en}</p>
-                      </div>
+                      <h3 className="font-semibold text-foreground">{item.name}</h3>
                       <span className="shrink-0 text-sm font-bold text-primary whitespace-nowrap">{item.price}</span>
                     </div>
                   ))}
