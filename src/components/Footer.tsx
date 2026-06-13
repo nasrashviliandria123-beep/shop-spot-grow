@@ -12,8 +12,8 @@ export function Footer() {
               Bakers Bros
             </h3>
             <p className="mt-3 text-sm leading-relaxed text-cream/80">
-              Freshly baked artisan breads, pastries & specialty coffee in Saguramo.
-              Made with love, served with warmth.
+              ახლადგამომცხვარი ხაჭაპური, ნამცხვრები და საფირმო ყავა საგურამოში.
+              გაკეთებული სიყვარულით, მირთმეული თბილად.
             </p>
             <div className="mt-4 flex items-center gap-2 text-bread">
               <Star className="h-4 w-4 fill-current" />
@@ -21,32 +21,32 @@ export function Footer() {
               <Star className="h-4 w-4 fill-current" />
               <Star className="h-4 w-4 fill-current" />
               <Star className="h-4 w-4 fill-current" />
-              <span className="ml-1 text-sm font-medium text-cream/90">4.9 (63 reviews)</span>
+              <span className="ml-1 text-sm font-medium text-cream/90">4.9 (63 შეფასება)</span>
             </div>
           </div>
 
           {/* Quick links */}
           <div>
-            <h4 className="text-sm font-bold uppercase tracking-wider text-bread">Quick Links</h4>
+            <h4 className="text-sm font-bold uppercase tracking-wider text-bread">სწრაფი ბმულები</h4>
             <ul className="mt-4 space-y-2.5">
               <li>
                 <Link to="/" className="text-sm text-cream/80 transition-colors hover:text-cream">
-                  Home
+                  მთავარი
                 </Link>
               </li>
               <li>
                 <Link to="/menu" className="text-sm text-cream/80 transition-colors hover:text-cream">
-                  Menu
+                  მენიუ
                 </Link>
               </li>
               <li>
                 <Link to="/about" className="text-sm text-cream/80 transition-colors hover:text-cream">
-                  About Us
+                  ჩვენ შესახებ
                 </Link>
               </li>
               <li>
                 <Link to="/contact" className="text-sm text-cream/80 transition-colors hover:text-cream">
-                  Contact
+                  კონტაქტი
                 </Link>
               </li>
             </ul>
@@ -54,12 +54,12 @@ export function Footer() {
 
           {/* Contact info */}
           <div>
-            <h4 className="text-sm font-bold uppercase tracking-wider text-bread">Contact</h4>
+            <h4 className="text-sm font-bold uppercase tracking-wider text-bread">კონტაქტი</h4>
             <ul className="mt-4 space-y-3">
               <li className="flex items-start gap-2.5">
                 <MapPin className="mt-0.5 h-4 w-4 shrink-0 text-bread" />
                 <span className="text-sm text-cream/80">
-                  N31, 1li St, Saguramo 3311, Georgia
+                  N31, 1-ლი ქუჩა, საგურამო 3311, საქართველო
                 </span>
               </li>
               <li className="flex items-center gap-2.5">
@@ -71,7 +71,7 @@ export function Footer() {
               <li className="flex items-center gap-2.5">
                 <Clock className="h-4 w-4 shrink-0 text-bread" />
                 <span className="text-sm text-cream/80">
-                  Open daily — Closes 9:30 PM
+                  ღია ყოველდღე — დახურვა 21:30
                 </span>
               </li>
             </ul>
@@ -87,7 +87,7 @@ export function Footer() {
         </div>
 
         <div className="mt-10 border-t border-cream/10 pt-6 text-center text-xs text-cream/50">
-          &copy; {new Date().getFullYear()} Bakers Bros. All rights reserved.
+          &copy; {new Date().getFullYear()} Bakers Bros. ყველა უფლება დაცულია.
         </div>
       </div>
     </footer>

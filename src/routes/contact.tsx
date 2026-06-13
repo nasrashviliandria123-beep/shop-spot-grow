@@ -1,14 +1,14 @@
-import { createFileRoute, Link } from "@tanstack/react-router";
+import { createFileRoute } from "@tanstack/react-router";
 import { useState } from "react";
-import { Phone, MapPin, Clock, Mail, Send, ArrowRight, CheckCircle } from "lucide-react";
+import { Phone, MapPin, Clock, Mail, Send, CheckCircle } from "lucide-react";
 
 export const Route = createFileRoute("/contact")({
   head: () => ({
     meta: [
-      { title: "Contact Us | Bakers Bros" },
-      { name: "description", content: "Get in touch with Bakers Bros. Request a quote, place a custom order, or visit our cafe-bakery in Saguramo." },
-      { property: "og:title", content: "Contact Us | Bakers Bros" },
-      { property: "og:description", content: "Request a free quote or get in touch for custom orders." },
+      { title: "კონტაქტი | Bakers Bros" },
+      { name: "description", content: "დაგვიკავშირდით Bakers Bros-ს. მიიღეთ შეთავაზება, შეუკვეთეთ საფირმო ტორტი ან ეწვიეთ ჩვენს კაფე-საცხობს საგურამოში." },
+      { property: "og:title", content: "კონტაქტი | Bakers Bros" },
+      { property: "og:description", content: "მიიღეთ უფასო შეთავაზება ან დაგვიკავშირდით საფირმო შეკვეთებისთვის." },
       { property: "og:url", content: "/contact" },
     ],
   }),
@@ -36,15 +36,15 @@ function ContactPage() {
       <section className="border-b border-border bg-muted/20">
         <div className="section-padding mx-auto max-w-7xl px-4 text-center md:px-6">
           <h1 className="text-3xl font-bold text-foreground md:text-5xl text-balance" style={{ fontFamily: "'Lora', serif" }}>
-            Get in Touch
+            დაგვიკავშირდით
           </h1>
           <p className="mx-auto mt-4 max-w-xl text-muted-foreground text-balance">
-            Have a question? Want a custom cake or catering quote? Drop us a message — we reply within 24 hours.
+            გაქვთ კითხვა? გსურთ საფირმო ტორტი ან კეთერინგის შეთავაზება? დაგვიწერეთ — ვპასუხობთ 24 საათში.
           </p>
           <div className="mt-4">
             <a href="tel:+995511109490" className="btn-primary">
               <Phone className="h-4 w-4" />
-              Call Now: +995 511 10 94 90
+              დარეკეთ: +995 511 10 94 90
             </a>
           </div>
         </div>
@@ -61,28 +61,28 @@ function ContactPage() {
                   <div className="py-10 text-center">
                     <CheckCircle className="mx-auto h-12 w-12 text-primary" />
                     <h2 className="mt-4 text-xl font-bold text-card-foreground" style={{ fontFamily: "'Lora', serif" }}>
-                      Message Sent!
+                      შეტყობინება გაიგზავნა!
                     </h2>
                     <p className="mt-2 text-muted-foreground">
-                      Thank you for reaching out. We'll get back to you within 24 hours.
+                      მადლობა მოგვწერეთ. დაგიკავშირდებით 24 საათში.
                     </p>
                     <button
                       onClick={() => { setSubmitted(false); setForm({ name: "", email: "", phone: "", eventType: "", message: "" }); }}
                       className="mt-6 text-sm font-medium text-primary hover:underline"
                     >
-                      Send another message
+                      კიდევ ერთი შეტყობინების გაგზავნა
                     </button>
                   </div>
                 ) : (
                   <>
                     <h2 className="text-xl font-bold text-card-foreground" style={{ fontFamily: "'Lora', serif" }}>
-                      Request a Free Quote
+                      მოითხოვეთ უფასო შეთავაზება
                     </h2>
                     <form onSubmit={handleSubmit} className="mt-6 space-y-5">
                       <div className="grid gap-5 sm:grid-cols-2">
                         <div>
                           <label htmlFor="name" className="mb-1.5 block text-sm font-medium text-card-foreground">
-                            Full Name
+                            სახელი და გვარი
                           </label>
                           <input
                             id="name"
@@ -91,12 +91,12 @@ function ContactPage() {
                             value={form.name}
                             onChange={(e) => setForm({ ...form, name: e.target.value })}
                             className="w-full rounded-lg border border-input bg-background px-3 py-2.5 text-sm text-foreground outline-none transition-colors focus:border-primary focus:ring-1 focus:ring-primary"
-                            placeholder="Your name"
+                            placeholder="თქვენი სახელი"
                           />
                         </div>
                         <div>
                           <label htmlFor="email" className="mb-1.5 block text-sm font-medium text-card-foreground">
-                            Email
+                            ელ. ფოსტა
                           </label>
                           <input
                             id="email"
@@ -112,7 +112,7 @@ function ContactPage() {
                       <div className="grid gap-5 sm:grid-cols-2">
                         <div>
                           <label htmlFor="phone" className="mb-1.5 block text-sm font-medium text-card-foreground">
-                            Phone
+                            ტელეფონი
                           </label>
                           <input
                             id="phone"
@@ -125,7 +125,7 @@ function ContactPage() {
                         </div>
                         <div>
                           <label htmlFor="eventType" className="mb-1.5 block text-sm font-medium text-card-foreground">
-                            Event Type
+                            ღონისძიების ტიპი
                           </label>
                           <select
                             id="eventType"
@@ -133,19 +133,19 @@ function ContactPage() {
                             onChange={(e) => setForm({ ...form, eventType: e.target.value })}
                             className="w-full rounded-lg border border-input bg-background px-3 py-2.5 text-sm text-foreground outline-none transition-colors focus:border-primary focus:ring-1 focus:ring-primary"
                           >
-                            <option value="">Select an option</option>
-                            <option value="birthday">Birthday Party</option>
-                            <option value="wedding">Wedding</option>
-                            <option value="corporate">Corporate Event</option>
-                            <option value="catering">Catering</option>
-                            <option value="custom">Custom Cake</option>
-                            <option value="other">Other</option>
+                            <option value="">აირჩიეთ</option>
+                            <option value="birthday">დაბადების დღე</option>
+                            <option value="wedding">ქორწილი</option>
+                            <option value="corporate">კორპორატიული</option>
+                            <option value="catering">კეთერინგი</option>
+                            <option value="custom">საფირმო ტორტი</option>
+                            <option value="other">სხვა</option>
                           </select>
                         </div>
                       </div>
                       <div>
                         <label htmlFor="message" className="mb-1.5 block text-sm font-medium text-card-foreground">
-                          Message / Details
+                          შეტყობინება / დეტალები
                         </label>
                         <textarea
                           id="message"
@@ -154,12 +154,12 @@ function ContactPage() {
                           value={form.message}
                           onChange={(e) => setForm({ ...form, message: e.target.value })}
                           className="w-full rounded-lg border border-input bg-background px-3 py-2.5 text-sm text-foreground outline-none transition-colors focus:border-primary focus:ring-1 focus:ring-primary resize-none"
-                          placeholder="Tell us about your event, guest count, and what you need..."
+                          placeholder="მოგვწერეთ ღონისძიების შესახებ, სტუმრების რაოდენობა და რა გჭირდებათ..."
                         />
                       </div>
                       <button type="submit" className="btn-primary w-full sm:w-auto">
                         <Send className="h-4 w-4" />
-                        Send Message
+                        გაგზავნა
                       </button>
                     </form>
                   </>
@@ -171,34 +171,34 @@ function ContactPage() {
             <div className="lg:col-span-2 space-y-6">
               <div className="rounded-2xl border border-border bg-card p-6 shadow-sm">
                 <h3 className="text-lg font-bold text-card-foreground" style={{ fontFamily: "'Lora', serif" }}>
-                  Visit Us
+                  ეწვიეთ ჩვენ
                 </h3>
                 <div className="mt-4 space-y-4">
                   <div className="flex items-start gap-3">
                     <MapPin className="mt-0.5 h-5 w-5 shrink-0 text-primary" />
                     <div>
-                      <p className="font-medium text-card-foreground">Bakers Bros Cafe-Bakery</p>
-                      <p className="text-sm text-muted-foreground">N31, 1li Street<br />Saguramo 3311, Georgia</p>
+                      <p className="font-medium text-card-foreground">Bakers Bros კაფე-საცხობი</p>
+                      <p className="text-sm text-muted-foreground">N31, 1-ლი ქუჩა<br />საგურამო 3311, საქართველო</p>
                     </div>
                   </div>
                   <div className="flex items-start gap-3">
                     <Clock className="mt-0.5 h-5 w-5 shrink-0 text-primary" />
                     <div>
-                      <p className="font-medium text-card-foreground">Opening Hours</p>
-                      <p className="text-sm text-muted-foreground">Open Daily<br />Closes 9:30 PM</p>
+                      <p className="font-medium text-card-foreground">სამუშაო საათები</p>
+                      <p className="text-sm text-muted-foreground">ღია ყოველდღე<br />დახურვა 21:30</p>
                     </div>
                   </div>
                   <div className="flex items-start gap-3">
                     <Phone className="mt-0.5 h-5 w-5 shrink-0 text-primary" />
                     <div>
-                      <p className="font-medium text-card-foreground">Phone</p>
+                      <p className="font-medium text-card-foreground">ტელეფონი</p>
                       <a href="tel:+995511109490" className="text-sm text-primary hover:underline">+995 511 10 94 90</a>
                     </div>
                   </div>
                   <div className="flex items-start gap-3">
                     <Mail className="mt-0.5 h-5 w-5 shrink-0 text-primary" />
                     <div>
-                      <p className="font-medium text-card-foreground">Email</p>
+                      <p className="font-medium text-card-foreground">ელ. ფოსტა</p>
                       <a href="mailto:hello@bakersbros.ge" className="text-sm text-primary hover:underline">hello@bakersbros.ge</a>
                     </div>
                   </div>
@@ -207,14 +207,14 @@ function ContactPage() {
 
               <div className="rounded-2xl border border-border bg-primary/5 p-6">
                 <h3 className="text-lg font-bold text-foreground" style={{ fontFamily: "'Lora', serif" }}>
-                  Need Something Fast?
+                  გჭირდებათ სწრაფად?
                 </h3>
                 <p className="mt-2 text-sm text-muted-foreground">
-                  For same-day orders or quick questions, call us directly. We take custom orders with 48-hour notice.
+                  იმავე დღის შეკვეთებისთვის ან სწრაფი კითხვებისთვის დაგვირეკეთ პირდაპირ. საფირმო შეკვეთებს ვიღებთ 48 საათით ადრე.
                 </p>
                 <a href="tel:+995511109490" className="btn-primary mt-4 inline-flex w-full justify-center">
                   <Phone className="h-4 w-4" />
-                  Call Now
+                  დარეკვა
                 </a>
               </div>
             </div>
