@@ -1,15 +1,13 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { Phone, Star, ChevronRight, Clock, MapPin, ArrowRight } from "lucide-react";
+import { Phone, Star, ChevronRight, Clock, MapPin } from "lucide-react";
 import heroKhachapuri from "../assets/hero-khachapuri.jpg";
-
+import { useLang } from "../lib/i18n";
 
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
       { title: "Bakers Bros | კაფე-საცხობი საგურამოში" },
-      { name: "description", content: "ახლადგამომცხვარი ხაჭაპური, ნამცხვრები და საფირმო ყავა საგურამოში. Bakers Bros — საუკეთესო ქართული კაფე-საცხობი." },
-      { property: "og:title", content: "Bakers Bros | კაფე-საცხობი საგურამოში" },
-      { property: "og:description", content: "ახლადგამომცხვარი ხაჭაპური, ნამცხვრები და საფირმო ყავა. ეწვიეთ ან დაგვირეკეთ შეკვეთისთვის." },
+      { name: "description", content: "ახლადგამომცხვარი ხაჭაპური, ნამცხვრები და საფირმო ყავა საგურამოში." },
       { property: "og:url", content: "/" },
     ],
   }),
@@ -17,6 +15,7 @@ export const Route = createFileRoute("/")({
 });
 
 function HomePage() {
+  const { t } = useLang();
   return (
     <>
       {/* Hero Section */}
@@ -24,7 +23,7 @@ function HomePage() {
         <div className="absolute inset-0">
           <img
             src={heroKhachapuri}
-            alt="აჭარული ხაჭაპური ცხელ-ცხელი თონიდან"
+            alt="Adjaran khachapuri fresh from the oven"
             className="h-full w-full object-cover"
             style={{ filter: "brightness(0.5)" }}
           />
@@ -33,34 +32,31 @@ function HomePage() {
           <div className="mx-auto max-w-2xl py-16 text-center md:py-24">
             <div className="mb-4 inline-flex items-center gap-2 rounded-full bg-bread/20 px-3 py-1 text-sm font-medium text-butter backdrop-blur-sm">
               <Star className="h-3.5 w-3.5 fill-butter text-butter" />
-              4.9 შეფასება | 10–20 ₾ ერთ პერსონაზე
+              {t("rating_badge")}
             </div>
             <h1
               className="text-4xl font-bold leading-tight text-cream md:text-5xl lg:text-6xl text-balance"
               style={{ fontFamily: "'Lora', serif" }}
             >
-              ახლადგამომცხვარი, გაკეთებული სიყვარულით
+              {t("hero_h1")}
             </h1>
-            <p className="mt-5 text-lg leading-relaxed text-cream/90 text-balance">
-              ნამდვილი ხაჭაპური, ფენოვანი ნამცხვრები და საფირმო ყავა Bakers Bros-ში.
-              თქვენი სამეზობლო კაფე-საცხობი საგურამოში — სადაც ყოველი ლუკმა სახლის გემო აქვს.
-            </p>
+            <p className="mt-5 text-lg leading-relaxed text-cream/90 text-balance">{t("hero_p")}</p>
             <div className="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row">
-              <Link to="/contact" className="btn-primary w-full sm:w-auto">
-                მიიღეთ უფასო შეთავაზება
-                <ArrowRight className="h-4 w-4" />
+              <Link to="/menu" className="btn-primary w-full sm:w-auto">
+                {t("view_menu")}
+                <ChevronRight className="h-4 w-4" />
               </Link>
               <a href="tel:+995511109490" className="btn-gold w-full sm:w-auto">
                 <Phone className="h-4 w-4" />
-                დარეკვა
+                {t("call")}
               </a>
             </div>
             <div className="mt-6 flex flex-wrap items-center justify-center gap-4 text-sm text-cream/80">
               <span className="inline-flex items-center gap-1.5">
-                <Clock className="h-4 w-4" /> ღია 21:30-მდე
+                <Clock className="h-4 w-4" /> {t("open_until")}
               </span>
               <span className="inline-flex items-center gap-1.5">
-                <MapPin className="h-4 w-4" /> საგურამო, საქართველო
+                <MapPin className="h-4 w-4" /> {t("location")}
               </span>
             </div>
           </div>
@@ -72,28 +68,14 @@ function HomePage() {
         <div className="mx-auto max-w-7xl px-4 md:px-6">
           <div className="mx-auto max-w-2xl text-center">
             <h2 className="text-3xl font-bold text-foreground md:text-4xl text-balance" style={{ fontFamily: "'Lora', serif" }}>
-              რას ამბობენ ჩვენი სტუმრები
+              {t("testimonials_h2")}
             </h2>
-            <p className="mt-3 text-muted-foreground text-balance">
-              4.9 შეფასება 63 კმაყოფილი სტუმრისგან — აი რა აბრუნებთ მათ ჩვენთან.
-            </p>
+            <p className="mt-3 text-muted-foreground text-balance">{t("testimonials_p")}</p>
           </div>
           <div className="mt-10 grid gap-6 md:grid-cols-3">
-            <TestimonialCard
-              name="ნათია კ."
-              rating={5}
-              text="საუკეთესო კრუასანები მთელ უბანში! ატმოსფერო ისეთი თბილი და მყუდროა. 30 წუთს მივდივართ მათი ცომეულისთვის."
-            />
-            <TestimonialCard
-              name="გიორგი მ."
-              rating={5}
-              text="დავუკვეთე საფირმო დაბადების დღის ტორტი — გასაოცარი იყო და გემრიელი. პერსონალი წარმოუდგენელია. ნამდვილად ვურჩევ!"
-            />
-            <TestimonialCard
-              name="მარიამ ტ."
-              rating={5}
-              text="მათი ყავა წარმოუდგენელია, ნამცხვრები ყოველთვის ახალია. იდეალური ადგილი შაბათ-კვირის სამხრად მეგობრებთან."
-            />
+            <TestimonialCard name={t("t1_name")} rating={5} text={t("t1_text")} />
+            <TestimonialCard name={t("t2_name")} rating={5} text={t("t2_text")} />
+            <TestimonialCard name={t("t3_name")} rating={5} text={t("t3_text")} />
           </div>
         </div>
       </section>
@@ -102,20 +84,13 @@ function HomePage() {
       <section className="section-padding bg-espresso text-cream">
         <div className="mx-auto max-w-4xl px-4 text-center md:px-6">
           <h2 className="text-3xl font-bold md:text-4xl text-balance" style={{ fontFamily: "'Lora', serif" }}>
-            გეგმავთ განსაკუთრებულ ღონისძიებას?
+            {t("cta_h2")}
           </h2>
-          <p className="mt-4 text-lg leading-relaxed text-cream/80 text-balance">
-            ჩვენ ვიზრუნებთ კერძებზე. საფირმო ტორტებიდან სრულ კეთერინგამდე — საცხობს თქვენს ზეიმზე მოვიყვანთ.
-            მიიღეთ უფასო, არასავალდებულო შეთავაზება რამდენიმე წუთში.
-          </p>
+          <p className="mt-4 text-lg leading-relaxed text-cream/80 text-balance">{t("cta_p")}</p>
           <div className="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row">
-            <Link to="/contact" className="btn-gold w-full sm:w-auto">
-              მიიღეთ უფასო შეთავაზება
-              <ChevronRight className="h-4 w-4" />
-            </Link>
-            <a href="tel:+995511109490" className="inline-flex items-center justify-center gap-2 rounded-md border border-cream/30 px-5 py-3 text-sm font-semibold text-cream transition-colors hover:bg-cream/10 w-full sm:w-auto">
+            <a href="tel:+995511109490" className="btn-gold w-full sm:w-auto">
               <Phone className="h-4 w-4" />
-              დარეკეთ +995 511 10 94 90
+              {t("call_us")}
             </a>
           </div>
         </div>
@@ -123,7 +98,6 @@ function HomePage() {
     </>
   );
 }
-
 
 function TestimonialCard({ name, rating, text }: { name: string; rating: number; text: string }) {
   return (
