@@ -101,7 +101,7 @@ export const translations: Dict = {
   addr_city: { ka: "საგურამო 3311, საქართველო", en: "Saguramo 3311, Georgia" },
   info_hours: { ka: "სამუშაო საათები", en: "Hours" },
   hours_line1: { ka: "ღია ყოველდღე", en: "Open daily" },
-  hours_line2: { ka: "დახურვა 21:30", en: "Closes 9:30 PM" },
+  hours_line2: { ka: "იხურება 21:30-ზე", en: "Closes 9:30 PM" },
   info_call: { ka: "დაგვირეკეთ", en: "Call us" },
 
   // Contact
@@ -112,12 +112,12 @@ export const translations: Dict = {
   },
   contact_h1: { ka: "დაგვიკავშირდით", en: "Get in touch" },
   contact_hero_p: {
-    ka: "გაქვთ კითხვა? გსურთ საფირმო ტორტი ან კეთერინგი? დაგვიწერეთ — ვპასუხობთ 24 საათში.",
+    ka: "გაქვთ კითხვა? გსურთ საფირმო ტორტი ან კეთერინგი? მოგვწერეთ — ვპასუხობთ 24 საათში.",
     en: "Have a question? Need a custom cake or catering? Write to us — we reply within 24 hours.",
   },
   call_direct: { ka: "დარეკეთ: +995 511 10 94 90", en: "Call: +995 511 10 94 90" },
   sent_h: { ka: "შეტყობინება გაიგზავნა!", en: "Message sent!" },
-  sent_p: { ka: "მადლობა მოგვწერეთ. დაგიკავშირდებით 24 საათში.", en: "Thanks for reaching out. We'll be in touch within 24 hours." },
+  sent_p: { ka: "მადლობა, რომ მოგვწერეთ. დაგიკავშირდებით 24 საათში.", en: "Thanks for reaching out. We'll be in touch within 24 hours." },
   send_another: { ka: "კიდევ ერთი შეტყობინების გაგზავნა", en: "Send another message" },
   form_h: { ka: "მოგვწერეთ", en: "Send us a message" },
   f_name: { ka: "სახელი და გვარი", en: "Full name" },
