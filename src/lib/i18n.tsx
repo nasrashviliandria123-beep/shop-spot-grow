@@ -175,7 +175,7 @@ export const translations: Dict = {
   quick_links: { ka: "სწრაფი ბმულები", en: "Quick links" },
   contact_caps: { ka: "კონტაქტი", en: "Contact" },
   addr_full: { ka: "N31, 1-ლი ქუჩა, საგურამო 3311, საქართველო", en: "31 1st Street, Saguramo 3311, Georgia" },
-  open_daily_full: { ka: "ღია ყოველდღე — დახურვა 21:30", en: "Open daily — closes 9:30 PM" },
+  open_daily_full: { ka: "ღია ყოველდღე — იხურება 21:30-ზე", en: "Open daily — closes 9:30 PM" },
   rights: { ka: "ყველა უფლება დაცულია.", en: "All rights reserved." },
 };
 
