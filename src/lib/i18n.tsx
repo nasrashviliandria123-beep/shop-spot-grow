@@ -23,35 +23,35 @@ export const translations: Dict = {
   rating_badge: { ka: "4.9 შეფასება | 10–20 ₾ ერთ პერსონაზე", en: "4.9 rating | 10–20 ₾ per person" },
   hero_h1: { ka: "ახლადგამომცხვარი, გაკეთებული სიყვარულით", en: "Freshly baked, made with love" },
   hero_p: {
-    ka: "ნამდვილი ხაჭაპური, ფენოვანი ნამცხვრები და საფირმო ყავა Bakers Bros-ში. თქვენი სამეზობლო კაფე-საცხობი საგურამოში — სადაც ყოველი ლუკმა სახლის გემო აქვს.",
+    ka: "ნამდვილი ხაჭაპური, ფენოვანი ნამცხვრები და საფირმო ყავა Bakers Bros-ში. თქვენი სამეზობლო კაფე-საცხობი საგურამოში — სადაც ყოველ ლუკმას სახლის გემო აქვს.",
     en: "Authentic khachapuri, flaky pastries and specialty coffee at Bakers Bros. Your neighborhood cafe-bakery in Saguramo — where every bite tastes like home.",
   },
-  view_menu: { ka: "ნახე მენიუ", en: "View menu" },
+  view_menu: { ka: "იხილეთ მენიუ", en: "View menu" },
   open_until: { ka: "ღია 21:30-მდე", en: "Open until 9:30 PM" },
   location: { ka: "საგურამო, საქართველო", en: "Saguramo, Georgia" },
   testimonials_h2: { ka: "რას ამბობენ ჩვენი სტუმრები", en: "What our guests say" },
   testimonials_p: {
-    ka: "4.9 შეფასება 63 კმაყოფილი სტუმრისგან — აი რა აბრუნებთ მათ ჩვენთან.",
+    ka: "4.9 ქულა 63 კმაყოფილი სტუმრისგან — აი, რა აბრუნებს მათ ჩვენთან.",
     en: "4.9 rating from 63 happy guests — here's what brings them back.",
   },
   t1_name: { ka: "ნათია კ.", en: "Natia K." },
   t1_text: {
-    ka: "საუკეთესო კრუასანები მთელ უბანში! ატმოსფერო ისეთი თბილი და მყუდროა. 30 წუთს მივდივართ მათი ცომეულისთვის.",
+    ka: "საუკეთესო კრუასანები მთელ უბანში! ატმოსფერო თბილი და მყუდროა. 30 წუთის სავალზე მივდივართ მათი ცომეულისთვის.",
     en: "Best croissants in the whole area! The atmosphere is so warm and cozy. We drive 30 minutes just for their pastries.",
   },
   t2_name: { ka: "გიორგი მ.", en: "Giorgi M." },
   t2_text: {
-    ka: "დავუკვეთე საფირმო დაბადების დღის ტორტი — გასაოცარი იყო და გემრიელი. პერსონალი წარმოუდგენელია. ნამდვილად ვურჩევ!",
+    ka: "შევუკვეთე საფირმო დაბადების დღის ტორტი — დიდებული და გემრიელი იყო. პერსონალი წარმოუდგენელია. ნამდვილად გირჩევთ!",
     en: "Ordered a custom birthday cake — it was stunning and delicious. The staff is amazing. Highly recommended!",
   },
   t3_name: { ka: "მარიამ ტ.", en: "Mariam T." },
   t3_text: {
-    ka: "მათი ყავა წარმოუდგენელია, ნამცხვრები ყოველთვის ახალია. იდეალური ადგილი შაბათ-კვირის სამხრად მეგობრებთან.",
+    ka: "მათი ყავა წარმოუდგენელია და ნამცხვრები ყოველთვის ახალია. იდეალური ადგილია შაბათ-კვირას მეგობრებთან სამხრად.",
     en: "Their coffee is incredible and the pastries are always fresh. The perfect weekend brunch spot with friends.",
   },
   cta_h2: { ka: "გეგმავთ განსაკუთრებულ ღონისძიებას?", en: "Planning a special event?" },
   cta_p: {
-    ka: "ჩვენ ვიზრუნებთ კერძებზე. საფირმო ტორტებიდან სრულ კეთერინგამდე — საცხობს თქვენს ზეიმზე მოვიყვანთ.",
+    ka: "ჩვენ ვიზრუნებთ კერძებზე. საფირმო ტორტებიდან სრულ კეთერინგამდე — საცხობს თქვენს ზეიმზე მოგიყვანთ.",
     en: "We'll take care of the food. From custom cakes to full catering — we'll bring the bakery to your celebration.",
   },
   call_us: { ka: "დარეკეთ +995 511 10 94 90", en: "Call +995 511 10 94 90" },
@@ -64,20 +64,20 @@ export const translations: Dict = {
   },
   about_h1: { ka: "Bakers Bros-ის შესახებ", en: "About Bakers Bros" },
   about_hero_p: {
-    ka: "ოჯახური კაფე-საცხობი, რომელიც ქართული გემოების სითბოს მოაქვს საგურამოში. ყოველი ხაჭაპური, ყოველი ნამცხვარი და ყოველი ფინჯანი ყავა ვნებით კეთდება.",
+    ka: "ოჯახური კაფე-საცხობი, რომელიც ქართული გემოების სითბოს მოაქვს საგურამოში. ყოველი ხაჭაპური, ყოველი ნამცხვარი და ყოველი ფინჯანი ყავა ვნებითაა გაკეთებული.",
     en: "A family cafe-bakery bringing the warmth of Georgian flavors to Saguramo. Every khachapuri, every pastry, and every cup of coffee is made with passion.",
   },
   story_h2: { ka: "ჩვენი ისტორია", en: "Our story" },
   story_p1: {
-    ka: "Bakers Bros დაიწყო პატარა საოჯახო სამზარეულოდან ერთი ოცნებით: ჩვენს თემს ნამდვილი, ხელნაკეთი ქართული გემოები მიგვერთმია. რაც დაიწყო შაბათ-კვირას ხაჭაპურის გაყიდვით ადგილობრივ ბაზრობებზე, გადაიქცა მყუდრო კაფე-საცხობად, რომელსაც დღეს ხედავთ.",
+    ka: "Bakers Bros პატარა საოჯახო სამზარეულოში დაიწყო ერთი ოცნებით: ჩვენი თემისთვის ნამდვილი, ხელნაკეთი ქართული გემოები გაგვეცნო. ის, რაც შაბათ-კვირას ადგილობრივ ბაზრობებზე ხაჭაპურის გაყიდვით დაიწყო, დღევანდელ მყუდრო კაფე-საცხობად გადაიქცა.",
     en: "Bakers Bros began in a small family kitchen with one dream: to share real, handmade Georgian flavors with our community. What started as weekend khachapuri sales at local markets has grown into the cozy cafe-bakery you see today.",
   },
   story_p2: {
-    ka: "ჩვენ გვჯერა, რომ კარგი საკვები კარგი ინგრედიენტებით იწყება. ამიტომ ვირჩევთ ადგილობრივ ყველს, ფერმის ახალ კვერცხებს და ნამდვილ კარაქს — გვერდის ავლის გარეშე, კონსერვანტების გარეშე. ცომი ყოველდღე ახლად მზადდება, რაც ყოველ ხაჭაპურს მის უნიკალურ გემოს ანიჭებს.",
+    ka: "გვჯერა, რომ კარგი საკვები კარგი ინგრედიენტებით იწყება. ამიტომ ვირჩევთ ადგილობრივ ყველს, ფერმის ახალ კვერცხებს და ნამდვილ კარაქს — გვერდის ავლისა და კონსერვანტების გარეშე. ცომი ყოველდღე ახლად მზადდება, რაც ყოველ ხაჭაპურს უნიკალურ გემოს ანიჭებს.",
     en: "We believe great food starts with great ingredients. That's why we choose local cheese, farm-fresh eggs, and real butter — no shortcuts, no preservatives. Our dough is made fresh every day, giving every khachapuri its unique flavor.",
   },
   story_p3: {
-    ka: "საგურამოში, 1-ლი ქუჩაზე, ვამაყობთ რომ ამ თემის ნაწილი ვართ. იქნება ეს სწრაფი ყავა, საფირმო ტორტი თუ ღონისძიების კეთერინგი — აქ ვართ, რომ ყოველი წუთი უფრო ტკბილი გავხადოთ.",
+    ka: "საგურამოში, 1-ლ ქუჩაზე, ვამაყობთ, რომ ამ თემის ნაწილი ვართ. იქნება ეს სწრაფი ყავა, საფირმო ტორტი თუ ღონისძიების კეთერინგი — აქ ვართ, რომ ყოველი წუთი უფრო ტკბილი გავხადოთ.",
     en: "On 1st Street in Saguramo, we're proud to be part of this community. Whether it's a quick coffee, a custom cake, or event catering — we're here to make every moment a little sweeter.",
   },
   values_h2: { ka: "რას ვემსახურებით", en: "What we stand for" },
@@ -101,7 +101,7 @@ export const translations: Dict = {
   addr_city: { ka: "საგურამო 3311, საქართველო", en: "Saguramo 3311, Georgia" },
   info_hours: { ka: "სამუშაო საათები", en: "Hours" },
   hours_line1: { ka: "ღია ყოველდღე", en: "Open daily" },
-  hours_line2: { ka: "დახურვა 21:30", en: "Closes 9:30 PM" },
+  hours_line2: { ka: "იხურება 21:30-ზე", en: "Closes 9:30 PM" },
   info_call: { ka: "დაგვირეკეთ", en: "Call us" },
 
   // Contact
@@ -112,12 +112,12 @@ export const translations: Dict = {
   },
   contact_h1: { ka: "დაგვიკავშირდით", en: "Get in touch" },
   contact_hero_p: {
-    ka: "გაქვთ კითხვა? გსურთ საფირმო ტორტი ან კეთერინგი? დაგვიწერეთ — ვპასუხობთ 24 საათში.",
+    ka: "გაქვთ კითხვა? გსურთ საფირმო ტორტი ან კეთერინგი? მოგვწერეთ — ვპასუხობთ 24 საათში.",
     en: "Have a question? Need a custom cake or catering? Write to us — we reply within 24 hours.",
   },
   call_direct: { ka: "დარეკეთ: +995 511 10 94 90", en: "Call: +995 511 10 94 90" },
   sent_h: { ka: "შეტყობინება გაიგზავნა!", en: "Message sent!" },
-  sent_p: { ka: "მადლობა მოგვწერეთ. დაგიკავშირდებით 24 საათში.", en: "Thanks for reaching out. We'll be in touch within 24 hours." },
+  sent_p: { ka: "მადლობა, რომ მოგვწერეთ. დაგიკავშირდებით 24 საათში.", en: "Thanks for reaching out. We'll be in touch within 24 hours." },
   send_another: { ka: "კიდევ ერთი შეტყობინების გაგზავნა", en: "Send another message" },
   form_h: { ka: "მოგვწერეთ", en: "Send us a message" },
   f_name: { ka: "სახელი და გვარი", en: "Full name" },
@@ -175,7 +175,7 @@ export const translations: Dict = {
   quick_links: { ka: "სწრაფი ბმულები", en: "Quick links" },
   contact_caps: { ka: "კონტაქტი", en: "Contact" },
   addr_full: { ka: "N31, 1-ლი ქუჩა, საგურამო 3311, საქართველო", en: "31 1st Street, Saguramo 3311, Georgia" },
-  open_daily_full: { ka: "ღია ყოველდღე — დახურვა 21:30", en: "Open daily — closes 9:30 PM" },
+  open_daily_full: { ka: "ღია ყოველდღე — იხურება 21:30-ზე", en: "Open daily — closes 9:30 PM" },
   rights: { ka: "ყველა უფლება დაცულია.", en: "All rights reserved." },
 };
 
