@@ -23,15 +23,15 @@ export const translations: Dict = {
   rating_badge: { ka: "4.9 შეფასება | 10–20 ₾ ერთ პერსონაზე", en: "4.9 rating | 10–20 ₾ per person" },
   hero_h1: { ka: "ახლადგამომცხვარი, გაკეთებული სიყვარულით", en: "Freshly baked, made with love" },
   hero_p: {
-    ka: "ნამდვილი ხაჭაპური, ფენოვანი ნამცხვრები და საფირმო ყავა Bakers Bros-ში. თქვენი სამეზობლო კაფე-საცხობი საგურამოში — სადაც ყოველი ლუკმა სახლის გემო აქვს.",
+    ka: "ნამდვილი ხაჭაპური, ფენოვანი ნამცხვრები და საფირმო ყავა Bakers Bros-ში. თქვენი სამეზობლო კაფე-საცხობი საგურამოში — სადაც ყოველ ლუკმას სახლის გემო აქვს.",
     en: "Authentic khachapuri, flaky pastries and specialty coffee at Bakers Bros. Your neighborhood cafe-bakery in Saguramo — where every bite tastes like home.",
   },
-  view_menu: { ka: "ნახე მენიუ", en: "View menu" },
+  view_menu: { ka: "იხილეთ მენიუ", en: "View menu" },
   open_until: { ka: "ღია 21:30-მდე", en: "Open until 9:30 PM" },
   location: { ka: "საგურამო, საქართველო", en: "Saguramo, Georgia" },
   testimonials_h2: { ka: "რას ამბობენ ჩვენი სტუმრები", en: "What our guests say" },
   testimonials_p: {
-    ka: "4.9 შეფასება 63 კმაყოფილი სტუმრისგან — აი რა აბრუნებთ მათ ჩვენთან.",
+    ka: "4.9 ქულა 63 კმაყოფილი სტუმრისგან — აი, რა აბრუნებს მათ ჩვენთან.",
     en: "4.9 rating from 63 happy guests — here's what brings them back.",
   },
   t1_name: { ka: "ნათია კ.", en: "Natia K." },
