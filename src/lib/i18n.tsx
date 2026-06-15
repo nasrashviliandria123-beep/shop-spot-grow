@@ -64,20 +64,20 @@ export const translations: Dict = {
   },
   about_h1: { ka: "Bakers Bros-ის შესახებ", en: "About Bakers Bros" },
   about_hero_p: {
-    ka: "ოჯახური კაფე-საცხობი, რომელიც ქართული გემოების სითბოს მოაქვს საგურამოში. ყოველი ხაჭაპური, ყოველი ნამცხვარი და ყოველი ფინჯანი ყავა ვნებით კეთდება.",
+    ka: "ოჯახური კაფე-საცხობი, რომელიც ქართული გემოების სითბოს მოაქვს საგურამოში. ყოველი ხაჭაპური, ყოველი ნამცხვარი და ყოველი ფინჯანი ყავა ვნებითაა გაკეთებული.",
     en: "A family cafe-bakery bringing the warmth of Georgian flavors to Saguramo. Every khachapuri, every pastry, and every cup of coffee is made with passion.",
   },
   story_h2: { ka: "ჩვენი ისტორია", en: "Our story" },
   story_p1: {
-    ka: "Bakers Bros დაიწყო პატარა საოჯახო სამზარეულოდან ერთი ოცნებით: ჩვენს თემს ნამდვილი, ხელნაკეთი ქართული გემოები მიგვერთმია. რაც დაიწყო შაბათ-კვირას ხაჭაპურის გაყიდვით ადგილობრივ ბაზრობებზე, გადაიქცა მყუდრო კაფე-საცხობად, რომელსაც დღეს ხედავთ.",
+    ka: "Bakers Bros პატარა საოჯახო სამზარეულოში დაიწყო ერთი ოცნებით: ჩვენი თემისთვის ნამდვილი, ხელნაკეთი ქართული გემოები გაგვეცნო. ის, რაც შაბათ-კვირას ადგილობრივ ბაზრობებზე ხაჭაპურის გაყიდვით დაიწყო, დღევანდელ მყუდრო კაფე-საცხობად გადაიქცა.",
     en: "Bakers Bros began in a small family kitchen with one dream: to share real, handmade Georgian flavors with our community. What started as weekend khachapuri sales at local markets has grown into the cozy cafe-bakery you see today.",
   },
   story_p2: {
-    ka: "ჩვენ გვჯერა, რომ კარგი საკვები კარგი ინგრედიენტებით იწყება. ამიტომ ვირჩევთ ადგილობრივ ყველს, ფერმის ახალ კვერცხებს და ნამდვილ კარაქს — გვერდის ავლის გარეშე, კონსერვანტების გარეშე. ცომი ყოველდღე ახლად მზადდება, რაც ყოველ ხაჭაპურს მის უნიკალურ გემოს ანიჭებს.",
+    ka: "გვჯერა, რომ კარგი საკვები კარგი ინგრედიენტებით იწყება. ამიტომ ვირჩევთ ადგილობრივ ყველს, ფერმის ახალ კვერცხებს და ნამდვილ კარაქს — გვერდის ავლისა და კონსერვანტების გარეშე. ცომი ყოველდღე ახლად მზადდება, რაც ყოველ ხაჭაპურს უნიკალურ გემოს ანიჭებს.",
     en: "We believe great food starts with great ingredients. That's why we choose local cheese, farm-fresh eggs, and real butter — no shortcuts, no preservatives. Our dough is made fresh every day, giving every khachapuri its unique flavor.",
   },
   story_p3: {
-    ka: "საგურამოში, 1-ლი ქუჩაზე, ვამაყობთ რომ ამ თემის ნაწილი ვართ. იქნება ეს სწრაფი ყავა, საფირმო ტორტი თუ ღონისძიების კეთერინგი — აქ ვართ, რომ ყოველი წუთი უფრო ტკბილი გავხადოთ.",
+    ka: "საგურამოში, 1-ლ ქუჩაზე, ვამაყობთ, რომ ამ თემის ნაწილი ვართ. იქნება ეს სწრაფი ყავა, საფირმო ტორტი თუ ღონისძიების კეთერინგი — აქ ვართ, რომ ყოველი წუთი უფრო ტკბილი გავხადოთ.",
     en: "On 1st Street in Saguramo, we're proud to be part of this community. Whether it's a quick coffee, a custom cake, or event catering — we're here to make every moment a little sweeter.",
   },
   values_h2: { ka: "რას ვემსახურებით", en: "What we stand for" },
