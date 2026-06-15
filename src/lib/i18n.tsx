@@ -36,22 +36,22 @@ export const translations: Dict = {
   },
   t1_name: { ka: "ნათია კ.", en: "Natia K." },
   t1_text: {
-    ka: "საუკეთესო კრუასანები მთელ უბანში! ატმოსფერო ისეთი თბილი და მყუდროა. 30 წუთს მივდივართ მათი ცომეულისთვის.",
+    ka: "საუკეთესო კრუასანები მთელ უბანში! ატმოსფერო თბილი და მყუდროა. 30 წუთის სავალზე მივდივართ მათი ცომეულისთვის.",
     en: "Best croissants in the whole area! The atmosphere is so warm and cozy. We drive 30 minutes just for their pastries.",
   },
   t2_name: { ka: "გიორგი მ.", en: "Giorgi M." },
   t2_text: {
-    ka: "დავუკვეთე საფირმო დაბადების დღის ტორტი — გასაოცარი იყო და გემრიელი. პერსონალი წარმოუდგენელია. ნამდვილად ვურჩევ!",
+    ka: "შევუკვეთე საფირმო დაბადების დღის ტორტი — დიდებული და გემრიელი იყო. პერსონალი წარმოუდგენელია. ნამდვილად გირჩევთ!",
     en: "Ordered a custom birthday cake — it was stunning and delicious. The staff is amazing. Highly recommended!",
   },
   t3_name: { ka: "მარიამ ტ.", en: "Mariam T." },
   t3_text: {
-    ka: "მათი ყავა წარმოუდგენელია, ნამცხვრები ყოველთვის ახალია. იდეალური ადგილი შაბათ-კვირის სამხრად მეგობრებთან.",
+    ka: "მათი ყავა წარმოუდგენელია და ნამცხვრები ყოველთვის ახალია. იდეალური ადგილია შაბათ-კვირას მეგობრებთან სამხრად.",
     en: "Their coffee is incredible and the pastries are always fresh. The perfect weekend brunch spot with friends.",
   },
   cta_h2: { ka: "გეგმავთ განსაკუთრებულ ღონისძიებას?", en: "Planning a special event?" },
   cta_p: {
-    ka: "ჩვენ ვიზრუნებთ კერძებზე. საფირმო ტორტებიდან სრულ კეთერინგამდე — საცხობს თქვენს ზეიმზე მოვიყვანთ.",
+    ka: "ჩვენ ვიზრუნებთ კერძებზე. საფირმო ტორტებიდან სრულ კეთერინგამდე — საცხობს თქვენს ზეიმზე მოგიყვანთ.",
     en: "We'll take care of the food. From custom cakes to full catering — we'll bring the bakery to your celebration.",
   },
   call_us: { ka: "დარეკეთ +995 511 10 94 90", en: "Call +995 511 10 94 90" },
