@@ -41,6 +41,8 @@
   --color-espresso: var(--espresso);
   --color-bread: var(--bread);
   --color-butter: var(--butter);
+  --color-amber-glow: var(--amber-glow);
+  --color-ember: var(--ember);
 
   --font-heading: "Lora", serif;
   --font-body: "Nunito Sans", sans-serif;
