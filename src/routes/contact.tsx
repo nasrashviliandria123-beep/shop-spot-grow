@@ -152,7 +152,7 @@ function ContactPage() {
                 </div>
               </div>
 
-              <div className="rounded-2xl border border-border bg-primary/5 p-6">
+              <div className="rounded-2xl border border-border/60 bg-secondary/40 p-6">
                 <h3 className="text-lg font-bold text-foreground" style={{ fontFamily: "'Lora', serif" }}>{t("urgent_h")}</h3>
                 <p className="mt-2 text-sm text-muted-foreground">{t("urgent_p")}</p>
                 <a href="tel:+995511109490" className="btn-primary mt-4 inline-flex w-full justify-center">

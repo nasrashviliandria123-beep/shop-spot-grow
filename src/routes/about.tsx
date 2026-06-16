@@ -18,7 +18,8 @@ function AboutPage() {
   const { t } = useLang();
   return (
     <>
-      <section className="border-b border-border bg-muted/20">
+      <section className="relative border-b border-border overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-b from-muted/30 to-background" />
         <div className="section-padding mx-auto max-w-7xl px-4 text-center md:px-6">
           <h1 className="text-3xl font-bold text-foreground md:text-5xl text-balance" style={{ fontFamily: "'Lora', serif" }}>
             {t("about_h1")}
@@ -27,7 +28,7 @@ function AboutPage() {
         </div>
       </section>
 
-      <section className="section-padding bg-background">
+      <section className="section-padding relative bg-background">
         <div className="mx-auto max-w-7xl px-4 md:px-6">
           <div className="grid items-center gap-10 lg:grid-cols-2">
             <div>
@@ -45,7 +46,8 @@ function AboutPage() {
         </div>
       </section>
 
-      <section className="section-padding bg-muted/30">
+      <section className="section-padding relative overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-br from-muted/20 via-background to-muted/10" />
         <div className="mx-auto max-w-7xl px-4 md:px-6">
           <div className="mx-auto max-w-2xl text-center">
             <h2 className="text-3xl font-bold text-foreground md:text-4xl text-balance" style={{ fontFamily: "'Lora', serif" }}>
@@ -60,7 +62,7 @@ function AboutPage() {
         </div>
       </section>
 
-      <section className="section-padding bg-background">
+      <section className="section-padding relative bg-background">
         <div className="mx-auto max-w-4xl px-4 md:px-6">
           <div className="grid gap-8 rounded-2xl border border-border bg-card p-8 shadow-sm md:grid-cols-3">
             <div className="text-center">
