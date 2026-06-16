@@ -67,7 +67,7 @@ function HomePage() {
       {/* Testimonials */}
       <section className="section-padding relative">
         <div className="absolute inset-0 bg-gradient-to-b from-background via-muted/10 to-background" />
-        <div className="mx-auto max-w-7xl px-4 md:px-6">
+        <div className="relative mx-auto max-w-7xl px-4 md:px-6">
           <div className="mx-auto max-w-2xl text-center">
             <h2 className="text-3xl font-bold text-foreground md:text-4xl text-balance" style={{ fontFamily: "'Lora', serif" }}>
               {t("testimonials_h2")}
@@ -85,7 +85,7 @@ function HomePage() {
       {/* Quote / CTA Section */}
       <section className="section-padding relative overflow-hidden border-y border-border/50 bg-espresso">
         <div className="absolute inset-0 bg-gradient-to-r from-ember/10 via-transparent to-amber-glow/10" />
-        <div className="mx-auto max-w-4xl px-4 text-center md:px-6">
+        <div className="relative mx-auto max-w-4xl px-4 text-center md:px-6">
           <h2 className="text-3xl font-bold md:text-4xl text-balance" style={{ fontFamily: "'Lora', serif" }}>
             {t("cta_h2")}
           </h2>
