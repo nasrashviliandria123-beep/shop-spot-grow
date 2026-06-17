@@ -14,7 +14,7 @@ import { reportLovableError } from "../lib/lovable-error-reporting";
 import { Header } from "../components/Header";
 import { Footer } from "../components/Footer";
 import { LanguageProvider } from "../lib/i18n";
-import { VideoBackground } from "../components/VideoBackground";
+
 
 function NotFoundComponent() {
   return (
