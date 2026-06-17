@@ -139,7 +139,17 @@ function MenuPage() {
                 <div className="space-y-3">
                   {section.items.map((item) => (
                     <div key={item.ka} className="flex items-start justify-between gap-4 border-b border-border pb-3 last:border-b-0">
-                      <h3 className="font-semibold text-foreground">{lang === "en" ? item.en : item.ka}</h3>
+                      <div className="flex items-start gap-3 min-w-0">
+                        {"image" in item && item.image ? (
+                          <img
+                            src={item.image}
+                            alt={item.en}
+                            loading="lazy"
+                            className="h-14 w-14 shrink-0 rounded-md object-cover shadow-sm"
+                          />
+                        ) : null}
+                        <h3 className="font-semibold text-foreground">{lang === "en" ? item.en : item.ka}</h3>
+                      </div>
                       <span className="shrink-0 text-sm font-bold text-primary whitespace-nowrap">{item.price}</span>
                     </div>
                   ))}
