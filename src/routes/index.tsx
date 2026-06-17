@@ -1,6 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { Phone, Star, ChevronRight, Clock, MapPin } from "lucide-react";
-import bgVideo from "../assets/bg.mp4.asset.json";
 import { useLang } from "../lib/i18n";
 
 export const Route = createFileRoute("/")({
