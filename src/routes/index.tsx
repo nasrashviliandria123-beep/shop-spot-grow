@@ -36,15 +36,17 @@ function HomePage() {
               <Star className="h-3.5 w-3.5 fill-butter text-butter" />
               {t("rating_badge")}
             </div>
-            <img
-              src={logoAsset.url}
-              alt="Bakers Bros"
-              className="mx-auto h-auto w-48 md:w-56 lg:w-64 -mt-6 drop-shadow-lg"
-            />
-            <h1 className="mt-2 text-2xl font-bold tracking-wide text-cream drop-shadow-md">
+            <div className="mx-auto -mt-6 inline-flex items-center justify-center rounded-full bg-gold p-5 shadow-xl ring-4 ring-cream/30 md:p-6 lg:p-8">
+              <img
+                src={logoAsset.url}
+                alt="Bakers Bros"
+                className="h-auto w-36 md:w-44 lg:w-52 drop-shadow-md"
+              />
+            </div>
+            <h1 className="mt-4 text-2xl font-bold tracking-wide text-cream drop-shadow-md">
               Bakers Bros
             </h1>
-            <p className="mt-5 text-lg leading-relaxed text-cream/90 text-balance">{t("hero_p")}</p>
+            <p className="mt-3 text-lg leading-relaxed text-cream/90 text-balance">{t("hero_p")}</p>
             <div className="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row">
               <Link to="/menu" className="btn-primary w-full sm:w-auto">
                 {t("view_menu")}
