@@ -39,6 +39,12 @@ function HomePage() {
           <div className="steam-particle steam-4" />
           <div className="steam-particle steam-5" />
           <div className="steam-particle steam-6" />
+          <div className="steam-particle steam-7" />
+          <div className="steam-particle steam-8" />
+          <div className="steam-particle steam-9" />
+          <div className="steam-particle steam-10" />
+          <div className="steam-particle steam-11" />
+          <div className="steam-particle steam-12" />
         </div>
 
         <img
