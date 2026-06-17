@@ -55,11 +55,11 @@ const menuSections = [
     key: "sec_pizza" as const,
     icon: <Pizza className="h-5 w-5" />,
     items: [
-      { ka: "პიცა მარგარიტა", en: "Margherita", price: "19 ₾" },
-      { ka: "პიცა შამპინიონი", en: "Mushroom", price: "22 ₾" },
-      { ka: "პიცა პეპერონი", en: "Pepperoni", price: "25 ₾" },
+      { ka: "პიცა მარგარიტა", en: "Margherita", price: "19 ₾", image: margherita.url },
+      { ka: "პიცა შამპინიონი", en: "Mushroom", price: "22 ₾", image: mushroom.url },
+      { ka: "პიცა პეპერონი", en: "Pepperoni", price: "25 ₾", image: pepperoni.url },
       { ka: "პიცა კაპრიჩოზა", en: "Capricciosa", price: "28 ₾" },
-      { ka: "პიცა ოთხი ყველი", en: "Four Cheese", price: "31.50 ₾" },
+      { ka: "პიცა ოთხი ყველი", en: "Four Cheese", price: "31.50 ₾", image: fourCheese.url },
     ],
   },
   {
