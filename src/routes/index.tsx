@@ -30,23 +30,21 @@ function HomePage() {
           />
           <div className="absolute inset-0 bg-gradient-to-b from-espresso/40 via-espresso/25 to-background" />
         </div>
+        <img
+          src={logoAsset.url}
+          alt="Bakers Bros"
+          className="absolute top-4 left-4 z-10 h-auto w-16 md:w-20 lg:w-24 drop-shadow-lg"
+        />
         <div className="section-padding relative mx-auto max-w-7xl">
           <div className="mx-auto max-w-2xl py-16 text-center md:py-24">
             <div className="mb-4 inline-flex items-center gap-2 rounded-full bg-bread/20 px-3 py-1 text-sm font-medium text-butter backdrop-blur-sm">
               <Star className="h-3.5 w-3.5 fill-butter text-butter" />
               {t("rating_badge")}
             </div>
-            <div className="mx-auto -mt-6 inline-flex items-center justify-center rounded-full bg-gold p-5 shadow-xl ring-4 ring-cream/30 md:p-6 lg:p-8">
-              <img
-                src={logoAsset.url}
-                alt="Bakers Bros"
-                className="h-auto w-36 md:w-44 lg:w-52 drop-shadow-md"
-              />
-            </div>
-            <h1 className="mt-4 text-2xl font-bold tracking-wide text-cream drop-shadow-md">
+            <h1 className="mt-6 text-2xl font-bold tracking-wide text-cream drop-shadow-md">
               Bakers Bros
             </h1>
-            <p className="mt-3 text-lg leading-relaxed text-cream/90 text-balance">{t("hero_p")}</p>
+            <p className="mt-5 text-lg leading-relaxed text-cream/90 text-balance">{t("hero_p")}</p>
             <div className="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row">
               <Link to="/menu" className="btn-primary w-full sm:w-auto">
                 {t("view_menu")}
