@@ -1,6 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { Phone, Star, ChevronRight, Clock, MapPin } from "lucide-react";
-import heroKhachapuri from "../assets/hero-khachapuri.jpg";
+import bgVideo from "../assets/bg.mp4.asset.json";
 import { useLang } from "../lib/i18n";
 
 export const Route = createFileRoute("/")({
@@ -21,11 +21,14 @@ function HomePage() {
       {/* Hero Section */}
       <section className="relative overflow-hidden">
         <div className="absolute inset-0">
-          <img
-            src={heroKhachapuri}
-            alt="Adjaran khachapuri fresh from the oven"
+          <video
+            src={bgVideo.url}
+            autoPlay
+            loop
+            muted
+            playsInline
             className="h-full w-full object-cover"
-            style={{ filter: "brightness(0.35)" }}
+            style={{ filter: "brightness(0.5)" }}
           />
           <div className="absolute inset-0 bg-gradient-to-t from-background via-background/40 to-transparent" />
         </div>
