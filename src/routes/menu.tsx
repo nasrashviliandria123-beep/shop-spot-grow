@@ -1,6 +1,16 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { Coffee, Cookie, Pizza, Wheat, Leaf } from "lucide-react";
 import { useLang } from "../lib/i18n";
+import sigareti from "../assets/menu/sigareti.jpg.asset.json";
+import eclair from "../assets/menu/eclair.jpg.asset.json";
+import shu from "../assets/menu/shu.jpg.asset.json";
+import fourCheese from "../assets/menu/four-cheese.jpg.asset.json";
+import pepperoni from "../assets/menu/pepperoni.jpg.asset.json";
+import mushroom from "../assets/menu/mushroom.png.asset.json";
+import margherita from "../assets/menu/margherita.jpg.asset.json";
+import achma from "../assets/menu/achma.jpg.asset.json";
+import chebureki from "../assets/menu/chebureki.jpg.asset.json";
+import kudari from "../assets/menu/kudari.jpg.asset.json";
 
 export const Route = createFileRoute("/menu")({
   head: () => ({
