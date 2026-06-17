@@ -47,8 +47,11 @@ function HomePage() {
             <p className="mt-5 text-lg leading-relaxed text-cream/90 text-balance">{t("hero_p")}</p>
             <div className="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row">
               <Link to="/menu" className="btn-primary w-full sm:w-auto">
-                {t("view_menu")}
+                🛒 Order Online
                 <ChevronRight className="h-4 w-4" />
+              </Link>
+              <Link to="/menu" className="btn-gold w-full sm:w-auto">
+                {t("view_menu")}
               </Link>
               <a href="tel:+995511109490" className="btn-gold w-full sm:w-auto">
                 <Phone className="h-4 w-4" />
