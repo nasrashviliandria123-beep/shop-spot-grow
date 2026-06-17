@@ -162,18 +162,18 @@
     transform: translateY(100%) translateX(0) scale(0.4) rotate(0deg);
     opacity: 0;
   }
-  10% {
-    opacity: 0.5;
+  8% {
+    opacity: 0.6;
   }
-  40% {
-    opacity: 0.4;
-    transform: translateY(40%) translateX(15px) scale(0.9) rotate(5deg);
+  35% {
+    opacity: 0.45;
+    transform: translateY(45%) translateX(20px) scale(0.95) rotate(10deg);
   }
-  70% {
+  65% {
     opacity: 0.2;
   }
   100% {
-    transform: translateY(-30%) translateX(50px) scale(1.6) rotate(15deg);
+    transform: translateY(-20%) translateX(60px) scale(1.8) rotate(22deg);
     opacity: 0;
   }
 }
@@ -183,18 +183,18 @@
     transform: translateY(100%) translateX(0) scale(0.4) rotate(0deg);
     opacity: 0;
   }
-  10% {
-    opacity: 0.45;
+  8% {
+    opacity: 0.55;
   }
-  40% {
-    opacity: 0.35;
-    transform: translateY(35%) translateX(-20px) scale(1) rotate(-8deg);
+  35% {
+    opacity: 0.4;
+    transform: translateY(40%) translateX(-25px) scale(1.05) rotate(-12deg);
   }
-  70% {
+  65% {
     opacity: 0.15;
   }
   100% {
-    transform: translateY(-25%) translateX(-60px) scale(1.5) rotate(-20deg);
+    transform: translateY(-15%) translateX(-75px) scale(1.7) rotate(-28deg);
     opacity: 0;
   }
 }
@@ -204,22 +204,22 @@
     transform: translateY(100%) translateX(0) scale(0.5);
     opacity: 0;
   }
-  15% {
-    opacity: 0.5;
+  8% {
+    opacity: 0.6;
   }
-  30% {
-    transform: translateY(50%) translateX(-10px) scale(0.8);
+  25% {
+    transform: translateY(55%) translateX(-15px) scale(0.9);
   }
-  50% {
-    transform: translateY(30%) translateX(20px) scale(1.1);
-    opacity: 0.3;
+  45% {
+    transform: translateY(35%) translateX(28px) scale(1.2);
+    opacity: 0.35;
   }
-  70% {
-    transform: translateY(10%) translateX(-15px) scale(1.3);
-    opacity: 0.15;
+  65% {
+    transform: translateY(15%) translateX(-20px) scale(1.4);
+    opacity: 0.18;
   }
   100% {
-    transform: translateY(-20%) translateX(30px) scale(1.7);
+    transform: translateY(-10%) translateX(40px) scale(1.9);
     opacity: 0;
   }
 }
@@ -241,7 +241,7 @@
     width: 90px;
     height: 90px;
     animation-name: steam-rise;
-    animation-duration: 4.5s;
+    animation-duration: 2.8s;
     animation-delay: 0s;
   }
 
@@ -250,8 +250,8 @@
     width: 130px;
     height: 130px;
     animation-name: steam-drift-left;
-    animation-duration: 5.5s;
-    animation-delay: 0.8s;
+    animation-duration: 3.2s;
+    animation-delay: 0.4s;
   }
 
   .steam-3 {
@@ -259,8 +259,8 @@
     width: 80px;
     height: 80px;
     animation-name: steam-wiggle;
-    animation-duration: 4s;
-    animation-delay: 0.3s;
+    animation-duration: 2.5s;
+    animation-delay: 0.2s;
   }
 
   .steam-4 {
@@ -268,8 +268,8 @@
     width: 110px;
     height: 110px;
     animation-name: steam-rise;
-    animation-duration: 5s;
-    animation-delay: 1.2s;
+    animation-duration: 3s;
+    animation-delay: 0.6s;
   }
 
   .steam-5 {
@@ -277,8 +277,8 @@
     width: 70px;
     height: 70px;
     animation-name: steam-drift-left;
-    animation-duration: 4.2s;
-    animation-delay: 1.8s;
+    animation-duration: 2.7s;
+    animation-delay: 0.9s;
   }
 
   .steam-6 {
@@ -286,8 +286,8 @@
     width: 100px;
     height: 100px;
     animation-name: steam-wiggle;
-    animation-duration: 5.2s;
-    animation-delay: 0.6s;
+    animation-duration: 3.1s;
+    animation-delay: 0.3s;
   }
 
   .steam-7 {
@@ -295,8 +295,8 @@
     width: 120px;
     height: 120px;
     animation-name: steam-rise;
-    animation-duration: 4.8s;
-    animation-delay: 2.2s;
+    animation-duration: 2.9s;
+    animation-delay: 1.1s;
   }
 
   .steam-8 {
@@ -304,8 +304,8 @@
     width: 85px;
     height: 85px;
     animation-name: steam-drift-left;
-    animation-duration: 4.6s;
-    animation-delay: 1.5s;
+    animation-duration: 2.6s;
+    animation-delay: 0.7s;
   }
 
   .steam-9 {
@@ -313,8 +313,8 @@
     width: 115px;
     height: 115px;
     animation-name: steam-rise;
-    animation-duration: 5.8s;
-    animation-delay: 2.8s;
+    animation-duration: 3.3s;
+    animation-delay: 1.4s;
   }
 
   .steam-10 {
@@ -322,8 +322,8 @@
     width: 75px;
     height: 75px;
     animation-name: steam-wiggle;
-    animation-duration: 4.3s;
-    animation-delay: 3.2s;
+    animation-duration: 2.4s;
+    animation-delay: 1.6s;
   }
 
   .steam-11 {
@@ -331,8 +331,8 @@
     width: 105px;
     height: 105px;
     animation-name: steam-drift-left;
-    animation-duration: 5.4s;
-    animation-delay: 2.5s;
+    animation-duration: 3s;
+    animation-delay: 1.2s;
   }
 
   .steam-12 {
@@ -340,7 +340,7 @@
     width: 95px;
     height: 95px;
     animation-name: steam-rise;
-    animation-duration: 4.1s;
-    animation-delay: 3.6s;
+    animation-duration: 2.5s;
+    animation-delay: 1.8s;
   }
 }
