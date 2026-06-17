@@ -25,9 +25,9 @@ function HomePage() {
             src={heroKhachapuri}
             alt="Bakers Bros artisan bakery"
             className="h-full w-full object-cover"
-            style={{ filter: "brightness(0.5)" }}
+            style={{ filter: "brightness(0.65)" }}
           />
-          <div className="absolute inset-0 bg-gradient-to-b from-espresso/60 via-espresso/40 to-background" />
+          <div className="absolute inset-0 bg-gradient-to-b from-espresso/40 via-espresso/25 to-background" />
         </div>
         <div className="section-padding relative mx-auto max-w-7xl">
           <div className="mx-auto max-w-2xl py-16 text-center md:py-24">
