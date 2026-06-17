@@ -19,15 +19,14 @@ function HomePage() {
   return (
     <>
       {/* Hero Section */}
-      <section className="relative overflow-hidden">
-        <div className="absolute inset-0">
+      <section className="relative overflow-hidden bg-black">
+        <div className="absolute inset-0 flex items-center justify-center">
           <img
-            src={heroKhachapuri}
-            alt="Bakers Bros artisan bakery"
-            className="h-full w-full object-cover"
-            style={{ filter: "brightness(0.65)" }}
+            src={heroLogo.url}
+            alt="Bakers Bros"
+            className="h-full w-full object-contain opacity-30"
           />
-          <div className="absolute inset-0 bg-gradient-to-b from-espresso/40 via-espresso/25 to-background" />
+          <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-background" />
         </div>
         <div className="section-padding relative mx-auto max-w-7xl">
           <div className="mx-auto max-w-2xl py-16 text-center md:py-24">
@@ -35,11 +34,9 @@ function HomePage() {
               <Star className="h-3.5 w-3.5 fill-butter text-butter" />
               {t("rating_badge")}
             </div>
-            <img
-              src={logoAsset.url}
-              alt="Bakers Bros"
-              className="mx-auto h-auto w-64 md:w-80 lg:w-96 drop-shadow-lg"
-            />
+            <h1 className="text-4xl font-bold text-cream md:text-5xl text-balance" style={{ fontFamily: "'Lora', serif" }}>
+              Bakers Bros
+            </h1>
             <p className="mt-5 text-lg leading-relaxed text-cream/90 text-balance">{t("hero_p")}</p>
             <div className="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row">
               <Link to="/menu" className="btn-primary w-full sm:w-auto">
