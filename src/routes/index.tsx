@@ -21,7 +21,7 @@ function HomePage() {
       <section className="relative overflow-hidden">
         <div className="absolute inset-0">
           <video
-            src={bgVideo.url}
+            src="/bg.mp4"
             autoPlay
             loop
             muted
