@@ -30,6 +30,17 @@ function HomePage() {
           />
           <div className="absolute inset-0 bg-gradient-to-b from-espresso/40 via-espresso/25 to-background" />
         </div>
+
+        {/* Rising steam particles */}
+        <div className="pointer-events-none absolute inset-0 z-[1] overflow-hidden">
+          <div className="steam-particle steam-1" />
+          <div className="steam-particle steam-2" />
+          <div className="steam-particle steam-3" />
+          <div className="steam-particle steam-4" />
+          <div className="steam-particle steam-5" />
+          <div className="steam-particle steam-6" />
+        </div>
+
         <img
           src={logoAsset.url}
           alt="Bakers Bros"
