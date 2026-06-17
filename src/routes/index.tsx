@@ -27,9 +27,9 @@ function HomePage() {
             muted
             playsInline
             className="h-full w-full object-cover"
-            style={{ filter: "brightness(0.5)" }}
+            style={{ filter: "brightness(0.75)" }}
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-background via-background/40 to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-background/20 to-transparent" />
         </div>
         <div className="section-padding relative mx-auto max-w-7xl">
           <div className="mx-auto max-w-2xl py-16 text-center md:py-24">
