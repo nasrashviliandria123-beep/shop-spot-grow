@@ -39,8 +39,11 @@ function HomePage() {
             <img
               src={logoAsset.url}
               alt="Bakers Bros"
-              className="mx-auto h-auto w-64 md:w-80 lg:w-96 drop-shadow-lg"
+              className="mx-auto h-auto w-48 md:w-56 lg:w-64 -mt-6 drop-shadow-lg"
             />
+            <h1 className="mt-2 text-2xl font-bold tracking-wide text-cream drop-shadow-md">
+              Bakers Bros
+            </h1>
             <p className="mt-5 text-lg leading-relaxed text-cream/90 text-balance">{t("hero_p")}</p>
             <div className="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row">
               <Link to="/menu" className="btn-primary w-full sm:w-auto">
