@@ -39,7 +39,7 @@ const menuSections = [
       { ka: "აჭარული ლობიანი", en: "Adjaran Lobiani", price: "12 ₾" },
       { ka: "ნახევრად ფენოვანი ხაჭაპური", en: "Semi-flaky Khachapuri", price: "6 ₾" },
       { ka: "ნახევრად ფენოვანი ლობიანი", en: "Semi-flaky Lobiani", price: "5 ₾" },
-      { ka: "ქუდარი", en: "Kudari", price: "17 ₾", image: kudari.url },
+      { ka: "კუბდარი", en: "Kubdari", price: "17 ₾", image: kudari.url },
       { ka: "ხაჭაპური შამფურზე", en: "Khachapuri on Skewer", price: "15 ₾" },
       { ka: "ლობიანი შამფურზე", en: "Lobiani on Skewer", price: "12 ₾" },
       { ka: "გურული ლვეშელი", en: "Gurian Lveshi", price: "12 ₾" },
