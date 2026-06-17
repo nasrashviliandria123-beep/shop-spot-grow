@@ -36,12 +36,11 @@ function HomePage() {
               <Star className="h-3.5 w-3.5 fill-butter text-butter" />
               {t("rating_badge")}
             </div>
-            <h1
-              className="text-4xl font-bold leading-tight text-cream md:text-5xl lg:text-6xl text-balance"
-              style={{ fontFamily: "'Lora', serif" }}
-            >
-              {t("hero_h1")}
-            </h1>
+            <img
+              src={logoAsset.url}
+              alt="Bakers Bros"
+              className="mx-auto h-auto w-64 md:w-80 lg:w-96 drop-shadow-lg"
+            />
             <p className="mt-5 text-lg leading-relaxed text-cream/90 text-balance">{t("hero_p")}</p>
             <div className="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row">
               <Link to="/menu" className="btn-primary w-full sm:w-auto">
