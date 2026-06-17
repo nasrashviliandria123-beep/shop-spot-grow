@@ -1,6 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { Phone, Star, ChevronRight, Clock, MapPin } from "lucide-react";
-import bgVideo from "../assets/bg.mp4.asset.json";
 import { useLang } from "../lib/i18n";
 
 export const Route = createFileRoute("/")({
@@ -22,15 +21,14 @@ function HomePage() {
       <section className="relative overflow-hidden">
         <div className="absolute inset-0">
           <video
-            src={bgVideo.url}
+            src="/bg.mp4"
             autoPlay
             loop
             muted
             playsInline
             className="h-full w-full object-cover"
-            style={{ filter: "brightness(0.5)" }}
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-background via-background/40 to-transparent" />
+          <div className="absolute inset-0 bg-black/30" />
         </div>
         <div className="section-padding relative mx-auto max-w-7xl">
           <div className="mx-auto max-w-2xl py-16 text-center md:py-24">
