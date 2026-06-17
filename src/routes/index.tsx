@@ -1,6 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { Phone, Star, ChevronRight, Clock, MapPin } from "lucide-react";
-import heroLogo from "../assets/bakers-bros-logo-black.png.asset.json";
+import heroKhachapuri from "../assets/hero-khachapuri.jpg";
+import logoAsset from "../assets/bakers-bros-logo-black.png.asset.json";
 import { useLang } from "../lib/i18n";
 
 export const Route = createFileRoute("/")({
@@ -19,14 +20,15 @@ function HomePage() {
   return (
     <>
       {/* Hero Section */}
-      <section className="relative overflow-hidden bg-black">
-        <div className="absolute inset-0 flex items-center justify-center">
+      <section className="relative overflow-hidden">
+        <div className="absolute inset-0">
           <img
-            src={heroLogo.url}
-            alt="Bakers Bros"
-            className="h-full w-full object-contain opacity-30"
+            src={heroKhachapuri}
+            alt="Bakers Bros artisan bakery"
+            className="h-full w-full object-cover"
+            style={{ filter: "brightness(0.65)" }}
           />
-          <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-background" />
+          <div className="absolute inset-0 bg-gradient-to-b from-espresso/40 via-espresso/25 to-background" />
         </div>
         <div className="section-padding relative mx-auto max-w-7xl">
           <div className="mx-auto max-w-2xl py-16 text-center md:py-24">
@@ -34,9 +36,11 @@ function HomePage() {
               <Star className="h-3.5 w-3.5 fill-butter text-butter" />
               {t("rating_badge")}
             </div>
-            <h1 className="text-4xl font-bold text-cream md:text-5xl text-balance" style={{ fontFamily: "'Lora', serif" }}>
-              Bakers Bros
-            </h1>
+            <img
+              src={logoAsset.url}
+              alt="Bakers Bros"
+              className="mx-auto h-auto w-64 md:w-80 lg:w-96 drop-shadow-lg"
+            />
             <p className="mt-5 text-lg leading-relaxed text-cream/90 text-balance">{t("hero_p")}</p>
             <div className="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row">
               <Link to="/menu" className="btn-primary w-full sm:w-auto">
