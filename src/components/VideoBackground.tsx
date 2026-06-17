@@ -10,9 +10,8 @@ export function VideoBackground() {
         muted
         playsInline
         className="absolute inset-0 h-full w-full object-cover"
-        style={{ filter: "brightness(0.45)" }}
       />
-      <div className="absolute inset-0 bg-background/55" />
+      <div className="absolute inset-0 bg-background/60" />
     </div>
   );
 }
