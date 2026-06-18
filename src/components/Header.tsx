@@ -122,6 +122,7 @@ export function Header() {
                 {t("nav_review")}
               </span>
             </Link>
+            <a
               href="tel:+995511109490"
               className="mt-2 inline-flex items-center justify-center gap-2 rounded-md bg-primary px-4 py-3 text-sm font-semibold text-primary-foreground"
             >
