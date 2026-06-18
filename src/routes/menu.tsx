@@ -1,5 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { Coffee, Cookie, Pizza, Wheat, Leaf, Plus, Minus, ShoppingBag, X } from "lucide-react";
+import { Coffee, Cookie, Pizza, Wheat, Leaf, Plus, Minus, ShoppingBag, X, Star } from "lucide-react";
 import { useState } from "react";
 import { useLang } from "../lib/i18n";
 import sigareti from "../assets/menu/sigareti.jpg.asset.json";
@@ -173,6 +173,10 @@ function MenuPage() {
   const [name, setName] = useState("");
   const [address, setAddress] = useState("");
   const [phone, setPhone] = useState("");
+  const [reviewOpen, setReviewOpen] = useState(false);
+  const [rating, setRating] = useState(0);
+  const [reviewText, setReviewText] = useState("");
+  const [reviewerName, setReviewerName] = useState("");
 
   const allItems = flattenItems(menuSections);
 
