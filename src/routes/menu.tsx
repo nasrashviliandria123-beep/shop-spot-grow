@@ -46,8 +46,8 @@ export const Route = createFileRoute("/menu")({
 type Size = { ka: string; en: string; price: string; priceNum: number };
 
 type MenuItem =
-  | { ka: string; en: string; price: string; priceNum: number; image?: string; sizes?: undefined }
-  | { ka: string; en: string; image?: string; sizes: Size[] };
+  | { ka: string; en: string; price: string; priceNum: number; image?: string; sizes?: undefined; orderOnly?: boolean }
+  | { ka: string; en: string; image?: string; sizes: Size[]; orderOnly?: boolean };
 
 const menuSections = [
   {
@@ -166,8 +166,8 @@ const menuSections = [
       { ka: "ეკლერი", en: "Éclair", price: " ₾", priceNum: 4, image: eclair.url },
       { ka: "სიგარეტი", en: "Sigareti (Rolled Pastry)", price: "3.50 ₾", priceNum: 3.5, image: sigareti.url },
       { ka: "ფახლავა", en: "Baklava", price: "5 ₾", priceNum: 5, image: baklava.url },
-      { ka: "ფორთოხლის ნამცხვარი", en: "Orange Cake", price: "4 ₾", priceNum: 4, image: orangeCake.url },
-      { ka: "ბანანის კექსი", en: "Banana Cake", price: " ₾", priceNum: 10, image: banana.url },
+      { ka: "ფორთოხლის ნამცხვარი", en: "Orange Cake", price: "4 ₾", priceNum: 4, image: orangeCake.url, orderOnly: true },
+      { ka: "ბანანის კექსი", en: "Banana Cake", price: " ₾", priceNum: 10, image: banana.url, orderOnly: true },
       { ka: "მედოვიკი ნაჭერი", en: "Medovik Slice", price: "5.50 ₾", priceNum: 5.5, image: medovik.url },
       { ka: "სნიკერსი", en: "Snickers Cake", price: " ₾", priceNum: 6, image: snickers.url },
       { ka: "ოპიუმი", en: "Opium Cake", price: "5.50 ₾", priceNum: 5.5, image: opium.url },
@@ -208,18 +208,20 @@ const menuSections = [
 ];
 
 function flattenItems(sections: typeof menuSections) {
-  const flat: { ka: string; en: string; price: string; priceNum: number; image?: string }[] = [];
+  const flat: { ka: string; en: string; price: string; priceNum: number; image?: string; orderOnly?: boolean }[] = [];
   for (const section of sections) {
     for (const item of section.items) {
-      if ("sizes" in item && item.sizes) {
-        for (const size of item.sizes) {
-          flat.push({
-            ka: `${item.ka} (${size.ka})`,
-            en: `${item.en} (${size.en})`,
-            price: size.price,
-            priceNum: size.priceNum,
-            image: item.image,
-          });
+      if (("sizes" in item && item.sizes) || ("orderOnly" in item && item.orderOnly)) {
+        if ("sizes" in item && item.sizes) {
+          for (const size of item.sizes) {
+            flat.push({
+              ka: `${item.ka} (${size.ka})`,
+              en: `${item.en} (${size.en})`,
+              price: size.price,
+              priceNum: size.priceNum,
+              image: item.image,
+            });
+          }
         }
       } else {
         flat.push(item as { ka: string; en: string; price: string; priceNum: number; image?: string });
@@ -381,7 +383,11 @@ function MenuPage() {
                         </div>
                         <div className="flex shrink-0 items-center gap-2">
                           <span className="text-sm font-bold text-primary whitespace-nowrap">{item.price}</span>
-                          {qty > 0 ? (
+                          {"orderOnly" in item && item.orderOnly ? (
+                            <span className="rounded-full bg-muted px-2.5 py-0.5 text-xs font-medium text-muted-foreground">
+                              {lang === "en" ? "On Order" : "შეკვეთით"}
+                            </span>
+                          ) : qty > 0 ? (
                             <div className="flex items-center gap-1 rounded-full bg-primary/10 px-1 py-1">
                               <button
                                 onClick={() => sub(item.ka)}
