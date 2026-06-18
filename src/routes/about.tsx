@@ -46,8 +46,8 @@ function AboutPage() {
         </div>
       </section>
 
-      <section className="section-padding relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-muted/20 via-background to-muted/10" />
+      <section className="section-padding relative overflow-hidden bg-espresso">
+        <div className="absolute inset-0 bg-gradient-to-br from-ember/10 via-transparent to-amber-glow/10" />
         <div className="mx-auto max-w-7xl px-4 md:px-6">
           <div className="mx-auto max-w-2xl text-center">
             <h2 className="text-3xl font-bold text-foreground md:text-4xl text-balance" style={{ fontFamily: "'Lora', serif" }}>
