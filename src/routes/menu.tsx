@@ -108,7 +108,7 @@ const menuSections = [
       {
         ka: "აჭარული ხაჭაპური",
         en: "Adjaran Khachapuri",
-        image: adjaruliNew.url,
+        image: adjaruli.url,
         sizes: [
           { ka: "მინი", en: "Mini", price: "12 ₾", priceNum: 12 },
           { ka: "პატარა", en: "S", price: "16.00 ₾", priceNum: 16 },
