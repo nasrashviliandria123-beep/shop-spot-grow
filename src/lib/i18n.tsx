@@ -75,7 +75,7 @@ export const translations: Dict = {
     en: "Bakers Bros began in a small family kitchen with one dream: to share real, handmade Georgian flavors with our community. What started as weekend khachapuri sales at local markets has grown into the cozy cafe-bakery you see today.",
   },
   story_p2: {
-    ka: "გვჯერა, რომ კარგი საკვები კარგი ინგრედიენტებით იწყება. ამიტომ ვირჩევთ ადგილობრივ ყველს, ფერმის ახალ კვერცხებს და ნამდვილ კარაქს — გვერდის ავლისა და კონსერვანტების გარეშე. ცომი ყოველდღე ახლად მზადდება, რაც ყოველ ხაჭაპურს უნიკალურ გემოს ანიჭებს.",
+    ka: "გვჯერა, რომ კარგი საკვები კარგი ინგრედიენტებით იწყება. ამიტომ ვირჩევთ ადგილობრივ ყველს, ფერმის ახალ კვერცხს და ნამდვილ კარაქს — გვერდის ავლისა და კონსერვანტების გარეშე. ცომი ყოველდღე ახლად მზადდება, რაც ყოველ ხაჭაპურს უნიკალურ გემოს ანიჭებს.",
     en: "We believe great food starts with great ingredients. That's why we choose local cheese, farm-fresh eggs, and real butter — no shortcuts, no preservatives. Our dough is made fresh every day, giving every khachapuri its unique flavor.",
   },
   story_p3: {
