@@ -43,6 +43,16 @@ export function Header() {
               </Link>
             );
           })}
+          <Link
+            to="/menu"
+            hash="reviews"
+            className="rounded-md px-3 py-2 text-sm font-medium transition-colors text-foreground hover:bg-muted hover:text-foreground"
+          >
+            <span className="inline-flex items-center gap-1.5">
+              <MessageSquarePlus className="h-4 w-4" />
+              {t("nav_review")}
+            </span>
+          </Link>
         </nav>
 
         <div className="hidden items-center gap-2 md:flex">
@@ -101,7 +111,17 @@ export function Header() {
                 {link.label}
               </Link>
             ))}
-            <a
+            <Link
+              to="/menu"
+              hash="reviews"
+              onClick={() => setMobileOpen(false)}
+              className="rounded-md px-3 py-2.5 text-sm font-medium transition-colors text-foreground hover:bg-muted"
+            >
+              <span className="inline-flex items-center gap-1.5">
+                <MessageSquarePlus className="h-4 w-4" />
+                {t("nav_review")}
+              </span>
+            </Link>
               href="tel:+995511109490"
               className="mt-2 inline-flex items-center justify-center gap-2 rounded-md bg-primary px-4 py-3 text-sm font-semibold text-primary-foreground"
             >
