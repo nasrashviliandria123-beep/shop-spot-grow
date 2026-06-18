@@ -31,6 +31,9 @@ import snickers from "../assets/menu/snickers.jpg.asset.json";
 import medovik from "../assets/menu/medovik.jpg.asset.json";
 import banana from "../assets/menu/banana.jpg.asset.json";
 import orangeCake from "../assets/menu/orange-cake.jpg.asset.json";
+import khachapuriSkewer from "../assets/menu/khachapuri-skewer.webp.asset.json";
+import lobianiSkewer from "../assets/menu/lobiani-skewer.jpg.asset.json";
+import meatPie from "../assets/menu/meat-pie.jpg.asset.json";
 
 export const Route = createFileRoute("/menu")({
   head: () => ({
@@ -147,18 +150,21 @@ const menuSections = [
       {
         ka: "ხაჭაპური შამფურზე",
         en: "Khachapuri on Skewer",
+        image: khachapuriSkewer.url,
         price: " ",
         priceNum: 0,
       },
       {
         ka: "ლობიანი შამფურზე",
         en: "Lobiani on Skewer",
+        image: lobianiSkewer.url,
         price: " ",
         priceNum: 0,
       },
       {
         ka: "ხორცის ღვეზელი",
         en: "Meat Pie",
+        image: meatPie.url,
         price: " ",
         priceNum: 0,
       },
