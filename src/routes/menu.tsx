@@ -65,8 +65,26 @@ const menuSections = [
           { ka: "დიდი", en: "Large", price: "19.50 ₾", priceNum: 19.5 },
         ],
       },
-      { ka: "მეგრული ხაჭაპური (საშუალო)", en: "Megrelian Khachapuri (M)", price: "15.50 ₾", priceNum: 15.5, image: megruli.url },
-      { ka: "ლაზური ხაჭაპური (საშუალო)", en: "Lazian Khachapuri (M)", price: "20 ₾", priceNum: 20, image: lazuri.url },
+      {
+        ka: "მეგრული ხაჭაპური",
+        en: "Megrelian Khachapuri",
+        image: megruli.url,
+        sizes: [
+          { ka: "პატარა", en: "S", price: "13.50 ₾", priceNum: 13.5 },
+          { ka: "საშუალო", en: "M", price: "15.50 ₾", priceNum: 15.5 },
+          { ka: "დიდი", en: "L", price: "19.50 ₾", priceNum: 19.5 },
+        ],
+      },
+      {
+        ka: "ლაზური ხაჭაპური",
+        en: "Lazian Khachapuri",
+        image: lazuri.url,
+        sizes: [
+          { ka: "პატარა", en: "S", price: "17 ₾", priceNum: 17 },
+          { ka: "საშუალო", en: "M", price: "20 ₾", priceNum: 20 },
+          { ka: "დიდი", en: "L", price: "24 ₾", priceNum: 24 },
+        ],
+      },
       {
         ka: "აჭარული ხაჭაპური",
         en: "Adjaran Khachapuri",
@@ -77,7 +95,16 @@ const menuSections = [
           { ka: "დიდი", en: "L", price: "19.50 ₾", priceNum: 19.5 },
         ],
       },
-      { ka: "ლობიანი (საშუალო)", en: "Lobiani (M)", price: "10 ₾", priceNum: 10, image: lobiani.url },
+      {
+        ka: "ლობიანი",
+        en: "Lobiani",
+        image: lobiani.url,
+        sizes: [
+          { ka: "პატარა", en: "S", price: "8 ₾", priceNum: 8 },
+          { ka: "საშუალო", en: "M", price: "10 ₾", priceNum: 10 },
+          { ka: "დიდი", en: "L", price: "13 ₾", priceNum: 13 },
+        ],
+      },
       {
         ka: "აჭარული ლობიანი",
         en: "Adjaran Lobiani",
@@ -88,11 +115,57 @@ const menuSections = [
           { ka: "დიდი", en: "L", price: "14 ₾", priceNum: 14 },
         ],
       },
-      { ka: "კუბდარი", en: "Kubdari", price: "17 ₾", priceNum: 17, image: kudari.url },
-      { ka: "ჩებურეკი", en: "Chebureki", price: "6 ₾", priceNum: 6, image: chebureki.url },
-      { ka: "აჩმა", en: "Achma", price: "8.50 ₾", priceNum: 8.5, image: achma.url },
-      { ka: "კარტოფილი ფრი", en: "French Fries", price: "4 ₾", priceNum: 4, image: fries.url },
-      { ka: "ფუნჩულა", en: "Ponchiki (Donut)", price: "3 ₾", priceNum: 3, image: ponchiki.url },
+      {
+        ka: "კუბდარი",
+        en: "Kubdari",
+        image: kudari.url,
+        sizes: [
+          { ka: "პატარა", en: "S", price: "14 ₾", priceNum: 14 },
+          { ka: "საშუალო", en: "M", price: "17 ₾", priceNum: 17 },
+          { ka: "დიდი", en: "L", price: "21 ₾", priceNum: 21 },
+        ],
+      },
+      {
+        ka: "ჩებურეკი",
+        en: "Chebureki",
+        image: chebureki.url,
+        sizes: [
+          { ka: "პატარა", en: "S", price: "4.50 ₾", priceNum: 4.5 },
+          { ka: "საშუალო", en: "M", price: "6 ₾", priceNum: 6 },
+          { ka: "დიდი", en: "L", price: "8 ₾", priceNum: 8 },
+        ],
+      },
+      {
+        ka: "აჩმა",
+        en: "Achma",
+        image: achma.url,
+        sizes: [
+          { ka: "პატარა", en: "S", price: "7 ₾", priceNum: 7 },
+          { ka: "საშუალო", en: "M", price: "8.50 ₾", priceNum: 8.5 },
+          { ka: "დიდი", en: "L", price: "11 ₾", priceNum: 11 },
+        ],
+      },
+      {
+        ka: "კარტოფილი ფრი",
+        en: "French Fries",
+        image: fries.url,
+        sizes: [
+          { ka: "პატარა", en: "S", price: "3 ₾", priceNum: 3 },
+          { ka: "საშუალო", en: "M", price: "4 ₾", priceNum: 4 },
+          { ka: "დიდი", en: "L", price: "6 ₾", priceNum: 6 },
+        ],
+      },
+      {
+        ka: "ფუნჩულა",
+        en: "Ponchiki (Donut)",
+        image: ponchiki.url,
+        sizes: [
+          { ka: "პატარა", en: "S", price: "2 ₾", priceNum: 2 },
+          { ka: "საშუალო", en: "M", price: "3 ₾", priceNum: 3 },
+          { ka: "დიდი", en: "L", price: "4.50 ₾", priceNum: 4.5 },
+        ],
+      },
+
     ] as MenuItem[],
   },
   {
