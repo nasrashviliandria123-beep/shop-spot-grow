@@ -74,6 +74,16 @@ const menuSections = [
         ],
       },
       {
+        ka: "იმერული ლობიანი",
+        en: "Imeretian Lobiani",
+        image: imeruliLobiani.url,
+        sizes: [
+          { ka: "პატარა", en: "Small", price: "8.50 ₾", priceNum: 8.5 },
+          { ka: "საშუალო", en: "Medium", price: "10.00 ₾", priceNum: 10 },
+          { ka: "დიდი", en: "Large", price: "12 ₾", priceNum: 12 },
+        ],
+      },
+      {
         ka: "მეგრული ხაჭაპური",
         en: "Megrelian Khachapuri",
         image: megruli.url,
@@ -109,16 +119,6 @@ const menuSections = [
         image: lobiani.url,
         price: "17.50 ₾",
         priceNum: 17.5,
-      },
-      {
-        ka: "იმერული ლობიანი",
-        en: "Imeretian Lobiani",
-        image: imeruliLobiani.url,
-        sizes: [
-          { ka: "პატარა", en: "Small", price: "8.50 ₾", priceNum: 8.5 },
-          { ka: "საშუალო", en: "Medium", price: "10.00 ₾", priceNum: 10 },
-          { ka: "დიდი", en: "Large", price: "12 ₾", priceNum: 12 },
-        ],
       },
       {
         ka: "აჭარული ლობიანი",
