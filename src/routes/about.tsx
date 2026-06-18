@@ -28,19 +28,20 @@ function AboutPage() {
         </div>
       </section>
 
-      <section className="section-padding relative bg-background">
-        <div className="mx-auto max-w-7xl px-4 md:px-6">
+      <section className="section-padding relative overflow-hidden bg-espresso">
+        <div className="absolute inset-0 bg-gradient-to-br from-ember/10 via-transparent to-amber-glow/10" />
+        <div className="relative mx-auto max-w-7xl px-4 md:px-6">
           <div className="grid items-center gap-10 lg:grid-cols-2">
             <div>
-              <img src={heroKhachapuri} alt="Khachapuri" loading="lazy" className="rounded-2xl object-cover shadow-lg" />
+              <img src={heroKhachapuri} alt="Khachapuri" loading="lazy" className="rounded-2xl object-cover shadow-lg border border-cream/10" />
             </div>
             <div>
-              <h2 className="text-2xl font-bold text-foreground md:text-3xl text-balance" style={{ fontFamily: "'Lora', serif" }}>
+              <h2 className="text-2xl font-bold text-cream md:text-3xl text-balance" style={{ fontFamily: "'Lora', serif" }}>
                 {t("story_h2")}
               </h2>
-              <p className="mt-4 leading-relaxed text-muted-foreground text-balance">{t("story_p1")}</p>
-              <p className="mt-4 leading-relaxed text-muted-foreground text-balance">{t("story_p2")}</p>
-              <p className="mt-4 leading-relaxed text-muted-foreground text-balance">{t("story_p3")}</p>
+              <p className="mt-4 leading-relaxed text-cream/70 text-balance">{t("story_p1")}</p>
+              <p className="mt-4 leading-relaxed text-cream/70 text-balance">{t("story_p2")}</p>
+              <p className="mt-4 leading-relaxed text-cream/70 text-balance">{t("story_p3")}</p>
             </div>
           </div>
         </div>
