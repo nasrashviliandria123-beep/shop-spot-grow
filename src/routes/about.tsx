@@ -91,10 +91,10 @@ function AboutPage() {
 
 function ValueCard({ icon, title, description }: { icon: React.ReactNode; title: string; description: string }) {
   return (
-    <div className="rounded-xl border border-border bg-card p-6 text-center shadow-sm">
-      <div className="mx-auto mb-4 inline-flex rounded-full bg-primary/10 p-3 text-primary">{icon}</div>
-      <h3 className="text-lg font-semibold text-card-foreground" style={{ fontFamily: "'Lora', serif" }}>{title}</h3>
-      <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{description}</p>
+    <div className="rounded-xl border border-cream/10 bg-cream/5 p-6 text-center shadow-sm backdrop-blur-sm">
+      <div className="mx-auto mb-4 inline-flex rounded-full bg-butter/10 p-3 text-butter">{icon}</div>
+      <h3 className="text-lg font-semibold text-cream" style={{ fontFamily: "'Lora', serif" }}>{title}</h3>
+      <p className="mt-2 text-sm leading-relaxed text-cream/70">{description}</p>
     </div>
   );
 }
