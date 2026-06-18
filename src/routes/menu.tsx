@@ -1,7 +1,8 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { Coffee, Cookie, Pizza, Wheat, Leaf, Plus, Minus, ShoppingBag, X, Star } from "lucide-react";
+import { Coffee, Cookie, Pizza, Wheat, Leaf, Plus, Minus, ShoppingBag, X, MessageSquarePlus } from "lucide-react";
 import { useState } from "react";
 import { useLang } from "../lib/i18n";
+import Reviews from "../components/Reviews";
 import sigareti from "../assets/menu/sigareti.jpg.asset.json";
 import eclair from "../assets/menu/eclair.jpg.asset.json";
 import shu from "../assets/menu/shu.jpg.asset.json";
@@ -173,10 +174,7 @@ function MenuPage() {
   const [name, setName] = useState("");
   const [address, setAddress] = useState("");
   const [phone, setPhone] = useState("");
-  const [reviewOpen, setReviewOpen] = useState(false);
-  const [rating, setRating] = useState(0);
-  const [reviewText, setReviewText] = useState("");
-  const [reviewerName, setReviewerName] = useState("");
+
 
   const allItems = flattenItems(menuSections);
 
@@ -226,8 +224,16 @@ function MenuPage() {
           <p className="mt-3 text-xs text-muted-foreground">
             {lang === "en" ? "Tap + to add items, then checkout via WhatsApp." : "დააჭირე + ნივთის დასამატებლად და გააფორმე შეკვეთა WhatsApp-ით."}
           </p>
+          <a
+            href="#reviews"
+            className="mt-5 inline-flex items-center gap-2 rounded-full border border-primary/40 bg-primary/10 px-5 py-2 text-sm font-semibold text-primary transition hover:bg-primary hover:text-primary-foreground"
+          >
+            <MessageSquarePlus className="h-4 w-4" />
+            {lang === "en" ? "Leave a Review" : "დატოვე შეფასება"}
+          </a>
         </div>
       </section>
+
 
       <section className="section-padding bg-background pb-32">
         <div className="mx-auto max-w-5xl px-4 md:px-6">
@@ -361,6 +367,11 @@ function MenuPage() {
           </div>
         </div>
       </section>
+
+      <div id="reviews" />
+      <Reviews />
+
+
 
       {/* Floating cart button */}
       {totalQty > 0 && (
