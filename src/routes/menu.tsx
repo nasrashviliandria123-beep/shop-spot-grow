@@ -134,7 +134,7 @@ const menuSections = [
         ka: "კარტოფილი ფრი",
         en: "French Fries",
         image: fries.url,
-        price: "4 ₾",
+        price: "\n",
         priceNum: 4,
       },
       {
