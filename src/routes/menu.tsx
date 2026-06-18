@@ -208,18 +208,20 @@ const menuSections = [
 ];
 
 function flattenItems(sections: typeof menuSections) {
-  const flat: { ka: string; en: string; price: string; priceNum: number; image?: string }[] = [];
+  const flat: { ka: string; en: string; price: string; priceNum: number; image?: string; orderOnly?: boolean }[] = [];
   for (const section of sections) {
     for (const item of section.items) {
-      if ("sizes" in item && item.sizes) {
-        for (const size of item.sizes) {
-          flat.push({
-            ka: `${item.ka} (${size.ka})`,
-            en: `${item.en} (${size.en})`,
-            price: size.price,
-            priceNum: size.priceNum,
-            image: item.image,
-          });
+      if (("sizes" in item && item.sizes) || ("orderOnly" in item && item.orderOnly)) {
+        if ("sizes" in item && item.sizes) {
+          for (const size of item.sizes) {
+            flat.push({
+              ka: `${item.ka} (${size.ka})`,
+              en: `${item.en} (${size.en})`,
+              price: size.price,
+              priceNum: size.priceNum,
+              image: item.image,
+            });
+          }
         }
       } else {
         flat.push(item as { ka: string; en: string; price: string; priceNum: number; image?: string });
