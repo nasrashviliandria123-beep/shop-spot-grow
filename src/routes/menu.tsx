@@ -22,6 +22,15 @@ import adjaruliLobiani from "../assets/menu/adjaruli-lobiani.jpg.asset.json";
 import fries from "../assets/menu/fries.jpg.asset.json";
 import ponchiki from "../assets/menu/ponchiki.jpg.asset.json";
 import baklava from "../assets/menu/baklava.webp.asset.json";
+import raffaello from "../assets/menu/raffaello.jpg.asset.json";
+import tart from "../assets/menu/tart.webp.asset.json";
+import redVelvet from "../assets/menu/red-velvet.jpg.asset.json";
+import chocolateCake from "../assets/menu/chocolate-cake.jpg.asset.json";
+import opium from "../assets/menu/opium.jpg.asset.json";
+import snickers from "../assets/menu/snickers.jpg.asset.json";
+import medovik from "../assets/menu/medovik.jpg.asset.json";
+import banana from "../assets/menu/banana.jpg.asset.json";
+import orangeCake from "../assets/menu/orange-cake.jpg.asset.json";
 
 export const Route = createFileRoute("/menu")({
   head: () => ({
@@ -105,17 +114,17 @@ const menuSections = [
       { ka: "ეკლერი", en: "Éclair", price: "4 ₾", priceNum: 4, image: eclair.url },
       { ka: "სიგარეტი", en: "Sigareti (Rolled Pastry)", price: "3.50 ₾", priceNum: 3.5, image: sigareti.url },
       { ka: "ფახლავა", en: "Baklava", price: "5 ₾", priceNum: 5, image: baklava.url },
-      { ka: "ფორთოხლის ნამცხვარი", en: "Orange Cake", price: "4 ₾", priceNum: 4 },
-      { ka: "ბანანის კექსი", en: "Banana Cake", price: "10 ₾", priceNum: 10 },
-      { ka: "მედოვიკი ნაჭერი", en: "Medovik Slice", price: "5.50 ₾", priceNum: 5.5 },
-      { ka: "სნიკერსი", en: "Snickers Cake", price: "6 ₾", priceNum: 6 },
-      { ka: "ოპიუმი", en: "Opium Cake", price: "5.50 ₾", priceNum: 5.5 },
-      { ka: "შოკოლადის ნამცხვარი", en: "Chocolate Cake", price: "6 ₾", priceNum: 6 },
-      { ka: "წითელი ხავერდი", en: "Red Velvet", price: "7 ₾", priceNum: 7 },
+      { ka: "ფორთოხლის ნამცხვარი", en: "Orange Cake", price: "4 ₾", priceNum: 4, image: orangeCake.url },
+      { ka: "ბანანის კექსი", en: "Banana Cake", price: "10 ₾", priceNum: 10, image: banana.url },
+      { ka: "მედოვიკი ნაჭერი", en: "Medovik Slice", price: "5.50 ₾", priceNum: 5.5, image: medovik.url },
+      { ka: "სნიკერსი", en: "Snickers Cake", price: "6 ₾", priceNum: 6, image: snickers.url },
+      { ka: "ოპიუმი", en: "Opium Cake", price: "5.50 ₾", priceNum: 5.5, image: opium.url },
+      { ka: "შოკოლადის ნამცხვარი", en: "Chocolate Cake", price: "6 ₾", priceNum: 6, image: chocolateCake.url },
+      { ka: "წითელი ხავერდი", en: "Red Velvet", price: "7 ₾", priceNum: 7, image: redVelvet.url },
       { ka: "ჩიზქეიქი", en: "Cheesecake", price: "7.50 ₾", priceNum: 7.5 },
-      { ka: "ტარტი", en: "Tart", price: "6 ₾", priceNum: 6 },
+      { ka: "ტარტი", en: "Tart", price: "6 ₾", priceNum: 6, image: tart.url },
       { ka: "ჭიქის ნამცხვარი", en: "Cup Cake", price: "6 ₾", priceNum: 6 },
-      { ka: "რაფაელო", en: "Raffaello", price: "6.50 ₾", priceNum: 6.5 },
+      { ka: "რაფაელო", en: "Raffaello", price: "6.50 ₾", priceNum: 6.5, image: raffaello.url },
       { ka: "მინი ტორტი", en: "Mini Cake", price: "6.50 ₾", priceNum: 6.5 },
     ] as MenuItem[],
   },
