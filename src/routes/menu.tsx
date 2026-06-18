@@ -162,8 +162,8 @@ const menuSections = [
     key: "sec_sweets" as const,
     icon: <Cookie className="h-5 w-5" />,
     items: [
-      { ka: "შუ", en: "Choux", price: " ", priceNum: 4, image: shu.url },
-      { ka: "ეკლერი", en: "Éclair", price: " ", priceNum: 4, image: eclair.url },
+      { ka: "შუ", en: "Choux", price: "4 ₾", priceNum: 4, image: shu.url },
+      { ka: "ეკლერი", en: "Éclair", price: "4 ₾", priceNum: 4, image: eclair.url },
       { ka: "სიგარეტი", en: "Sigareti (Rolled Pastry)", price: "3.50 ₾", priceNum: 3.5, image: sigareti.url },
       { ka: "ფახლავა", en: "Baklava", price: "5 ₾", priceNum: 5, image: baklava.url },
       { ka: "ფორთოხლის ნამცხვარი", en: "Orange Cake", price: "4 ₾", priceNum: 4, image: orangeCake.url, orderOnly: true },
