@@ -106,6 +106,13 @@ const menuSections = [
         ka: "ლისტის ნახერვად ფენოვანი ლობიანი",
         en: "Lobiani",
         image: lobiani.url,
+        price: "17.50 ₾",
+        priceNum: 17.5,
+      },
+      {
+        ka: "იმერული ლობიანი",
+        en: "Imeretian Lobiani",
+        image: lobiani.url,
         sizes: [
           { ka: "პატარა", en: "Small", price: "8.50 ₾", priceNum: 8.5 },
           { ka: "საშუალო", en: "Medium", price: "10.00 ₾", priceNum: 10 },
