@@ -1,7 +1,8 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { Coffee, Cookie, Pizza, Wheat, Leaf, Plus, Minus, ShoppingBag, X, Star } from "lucide-react";
+import { Coffee, Cookie, Pizza, Wheat, Leaf, Plus, Minus, ShoppingBag, X, MessageSquarePlus } from "lucide-react";
 import { useState } from "react";
 import { useLang } from "../lib/i18n";
+import Reviews from "../components/Reviews";
 import sigareti from "../assets/menu/sigareti.jpg.asset.json";
 import eclair from "../assets/menu/eclair.jpg.asset.json";
 import shu from "../assets/menu/shu.jpg.asset.json";
