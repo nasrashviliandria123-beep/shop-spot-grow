@@ -38,6 +38,7 @@ import potatoPie from "../assets/menu/potato-pie.jpg.asset.json";
 import ideali from "../assets/menu/ideali.jpg.asset.json";
 import spartak from "../assets/menu/spartak.jpg.asset.json";
 import irisi from "../assets/menu/irisi.jpg.asset.json";
+import imeruliLobiani from "../assets/menu/imeruli-lobiani.jpg.asset.json";
 
 export const Route = createFileRoute("/menu")({
   head: () => ({
@@ -112,7 +113,7 @@ const menuSections = [
       {
         ka: "იმერული ლობიანი",
         en: "Imeretian Lobiani",
-        image: lobiani.url,
+        image: imeruliLobiani.url,
         sizes: [
           { ka: "პატარა", en: "Small", price: "8.50 ₾", priceNum: 8.5 },
           { ka: "საშუალო", en: "Medium", price: "10.00 ₾", priceNum: 10 },
