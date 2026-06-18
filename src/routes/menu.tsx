@@ -19,6 +19,9 @@ import lazuri from "../assets/menu/lazuri.webp.asset.json";
 import adjaruli from "../assets/menu/adjaruli.jpg.asset.json";
 import lobiani from "../assets/menu/lobiani.jpg.asset.json";
 import adjaruliLobiani from "../assets/menu/adjaruli-lobiani.jpg.asset.json";
+import fries from "../assets/menu/fries.jpg.asset.json";
+import ponchiki from "../assets/menu/ponchiki.jpg.asset.json";
+import baklava from "../assets/menu/baklava.webp.asset.json";
 
 export const Route = createFileRoute("/menu")({
   head: () => ({
