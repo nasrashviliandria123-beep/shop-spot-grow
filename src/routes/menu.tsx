@@ -34,6 +34,7 @@ import orangeCake from "../assets/menu/orange-cake.jpg.asset.json";
 import khachapuriSkewer from "../assets/menu/khachapuri-skewer.webp.asset.json";
 import lobianiSkewer from "../assets/menu/lobiani-skewer.jpg.asset.json";
 import meatPie from "../assets/menu/meat-pie.jpg.asset.json";
+import potatoPie from "../assets/menu/potato-pie.jpg.asset.json";
 
 export const Route = createFileRoute("/menu")({
   head: () => ({
@@ -167,6 +168,13 @@ const menuSections = [
         image: meatPie.url,
         price: "5.50 ₾",
         priceNum: 5.50,
+      },
+      {
+        ka: "კარტოფილის ღვეზელი",
+        en: "Potato Pie",
+        image: potatoPie.url,
+        price: "4 ₾",
+        priceNum: 4,
       },
 
     ] as MenuItem[],
