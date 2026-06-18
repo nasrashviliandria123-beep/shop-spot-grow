@@ -37,6 +37,7 @@ import meatPie from "../assets/menu/meat-pie.jpg.asset.json";
 import potatoPie from "../assets/menu/potato-pie.jpg.asset.json";
 import ideali from "../assets/menu/ideali.jpg.asset.json";
 import spartak from "../assets/menu/spartak.jpg.asset.json";
+import irisi from "../assets/menu/irisi.jpg.asset.json";
 
 export const Route = createFileRoute("/menu")({
   head: () => ({
@@ -214,6 +215,7 @@ const menuSections = [
       { ka: "მინი ტორტი", en: "Mini Cake", price: "6.50 ₾", priceNum: 6.5 },
       { ka: "იდეალი", en: "Ideali Cake", price: "6 ₾", priceNum: 6, image: ideali.url },
       { ka: "სპარტაკი", en: "Spartak Cake", price: "6 ₾", priceNum: 6, image: spartak.url },
+      { ka: "ირისი", en: "Iris Caramel", price: "6 ₾", priceNum: 6, image: irisi.url },
     ] as MenuItem[],
   },
   {
