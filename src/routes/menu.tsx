@@ -383,7 +383,11 @@ function MenuPage() {
                         </div>
                         <div className="flex shrink-0 items-center gap-2">
                           <span className="text-sm font-bold text-primary whitespace-nowrap">{item.price}</span>
-                          {qty > 0 ? (
+                          {"orderOnly" in item && item.orderOnly ? (
+                            <span className="rounded-full bg-muted px-2.5 py-0.5 text-xs font-medium text-muted-foreground">
+                              {lang === "en" ? "On Order" : "შეკვეთით"}
+                            </span>
+                          ) : qty > 0 ? (
                             <div className="flex items-center gap-1 rounded-full bg-primary/10 px-1 py-1">
                               <button
                                 onClick={() => sub(item.ka)}
