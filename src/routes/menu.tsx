@@ -368,6 +368,11 @@ function MenuPage() {
         </div>
       </section>
 
+      <div id="reviews" />
+      <Reviews />
+
+
+
       {/* Floating cart button */}
       {totalQty > 0 && (
         <button
