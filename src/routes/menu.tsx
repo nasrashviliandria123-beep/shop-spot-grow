@@ -60,12 +60,12 @@ const menuSections = [
         en: "Imeretian Khachapuri",
         image: imeruli.url,
         sizes: [
-          { ka: "პატარა", en: "Small", price: "12 ₾", priceNum: 12 },
-          { ka: "საშუალო", en: "Medium", price: "14 ₾", priceNum: 14 },
-          { ka: "დიდი", en: "Large", price: "17 ₾", priceNum: 17 },
+          { ka: "პატარა", en: "Small", price: "13.50 ₾", priceNum: 13.5 },
+          { ka: "საშუალო", en: "Medium", price: "15.50 ₾", priceNum: 15.5 },
+          { ka: "დიდი", en: "Large", price: "19.50 ₾", priceNum: 19.5 },
         ],
       },
-      { ka: "მეგრული ხაჭაპური (საშუალო)", en: "Megrelian Khachapuri (M)", price: "16 ₾", priceNum: 16, image: megruli.url },
+      { ka: "მეგრული ხაჭაპური (საშუალო)", en: "Megrelian Khachapuri (M)", price: "15.50 ₾", priceNum: 15.5, image: megruli.url },
       { ka: "ლაზური ხაჭაპური (საშუალო)", en: "Lazian Khachapuri (M)", price: "20 ₾", priceNum: 20, image: lazuri.url },
       {
         ka: "აჭარული ხაჭაპური",
