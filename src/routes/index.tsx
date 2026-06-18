@@ -22,12 +22,16 @@ function HomePage() {
       {/* Hero Section */}
       <section className="relative overflow-hidden">
         <div className="absolute inset-0">
-          <img
-            src={heroKhachapuri}
-            alt="Bakers Bros artisan bakery"
+          <video
+            autoPlay
+            muted
+            loop
+            playsInline
             className="h-full w-full object-cover"
             style={{ filter: "brightness(0.65)" }}
-          />
+          >
+            <source src={bgVideo.url} type="video/mp4" />
+          </video>
           <div className="absolute inset-0 bg-gradient-to-b from-espresso/40 via-espresso/25 to-background" />
         </div>
 
