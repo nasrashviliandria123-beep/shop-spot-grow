@@ -46,8 +46,8 @@ export const Route = createFileRoute("/menu")({
 type Size = { ka: string; en: string; price: string; priceNum: number };
 
 type MenuItem =
-  | { ka: string; en: string; price: string; priceNum: number; image?: string; sizes?: undefined }
-  | { ka: string; en: string; image?: string; sizes: Size[] };
+  | { ka: string; en: string; price: string; priceNum: number; image?: string; sizes?: undefined; orderOnly?: boolean }
+  | { ka: string; en: string; image?: string; sizes: Size[]; orderOnly?: boolean };
 
 const menuSections = [
   {
