@@ -120,7 +120,7 @@ const menuSections = [
       {
         ka: "აჭარული ლობიანი",
         en: "Adjaran Lobiani",
-        image: adjaruliLobiani.url,
+        image: adjaruliNew.url,
         price: "12 ₾",
         priceNum: 12,
       },
