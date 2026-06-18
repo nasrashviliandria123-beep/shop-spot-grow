@@ -167,7 +167,7 @@ const menuSections = [
       { ka: "სიგარეტი", en: "Sigareti (Rolled Pastry)", price: "3.50 ₾", priceNum: 3.5, image: sigareti.url },
       { ka: "ფახლავა", en: "Baklava", price: "5 ₾", priceNum: 5, image: baklava.url },
       { ka: "ფორთოხლის ნამცხვარი", en: "Orange Cake", price: "4 ₾", priceNum: 4, image: orangeCake.url, orderOnly: true },
-      { ka: "ბანანის კექსი", en: "Banana Cake", price: " ₾", priceNum: 10, image: banana.url },
+      { ka: "ბანანის კექსი", en: "Banana Cake", price: " ₾", priceNum: 10, image: banana.url, orderOnly: true },
       { ka: "მედოვიკი ნაჭერი", en: "Medovik Slice", price: "5.50 ₾", priceNum: 5.5, image: medovik.url },
       { ka: "სნიკერსი", en: "Snickers Cake", price: " ₾", priceNum: 6, image: snickers.url },
       { ka: "ოპიუმი", en: "Opium Cake", price: "5.50 ₾", priceNum: 5.5, image: opium.url },
