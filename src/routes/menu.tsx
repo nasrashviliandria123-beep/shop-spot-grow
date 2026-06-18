@@ -30,30 +30,57 @@ export const Route = createFileRoute("/menu")({
   component: MenuPage,
 });
 
+type Size = { ka: string; en: string; price: string; priceNum: number };
+
+type MenuItem =
+  | { ka: string; en: string; price: string; priceNum: number; image?: string; sizes?: undefined }
+  | { ka: string; en: string; image?: string; sizes: Size[] };
+
 const menuSections = [
   {
     key: "sec_khach" as const,
     icon: <Wheat className="h-5 w-5" />,
     wide: true,
     items: [
-      { ka: "იმერული ხაჭაპური (პატარა)", en: "Imeretian Khachapuri (small)", price: "12 ₾", priceNum: 12, image: imeruli.url },
-      { ka: "იმერული ხაჭაპური (საშუალო)", en: "Imeretian Khachapuri (medium)", price: "14 ₾", priceNum: 14, image: imeruli.url },
-      { ka: "იმერული ხაჭაპური (დიდი)", en: "Imeretian Khachapuri (large)", price: "17 ₾", priceNum: 17, image: imeruli.url },
+      {
+        ka: "იმერული ხაჭაპური",
+        en: "Imeretian Khachapuri",
+        image: imeruli.url,
+        sizes: [
+          { ka: "პატარა", en: "Small", price: "12 ₾", priceNum: 12 },
+          { ka: "საშუალო", en: "Medium", price: "14 ₾", priceNum: 14 },
+          { ka: "დიდი", en: "Large", price: "17 ₾", priceNum: 17 },
+        ],
+      },
       { ka: "მეგრული ხაჭაპური (საშუალო)", en: "Megrelian Khachapuri (M)", price: "16 ₾", priceNum: 16, image: megruli.url },
       { ka: "ლაზური ხაჭაპური (საშუალო)", en: "Lazian Khachapuri (M)", price: "20 ₾", priceNum: 20, image: lazuri.url },
-      { ka: "აჭარული ხაჭაპური (პატარა)", en: "Adjaran Khachapuri (S)", price: "14.50 ₾", priceNum: 14.5, image: adjaruli.url },
-      { ka: "აჭარული ხაჭაპური (საშუალო)", en: "Adjaran Khachapuri (M)", price: "16.50 ₾", priceNum: 16.5, image: adjaruli.url },
-      { ka: "აჭარული ხაჭაპური (დიდი)", en: "Adjaran Khachapuri (L)", price: "19.50 ₾", priceNum: 19.5, image: adjaruli.url },
+      {
+        ka: "აჭარული ხაჭაპური",
+        en: "Adjaran Khachapuri",
+        image: adjaruli.url,
+        sizes: [
+          { ka: "პატარა", en: "S", price: "14.50 ₾", priceNum: 14.5 },
+          { ka: "საშუალო", en: "M", price: "16.50 ₾", priceNum: 16.5 },
+          { ka: "დიდი", en: "L", price: "19.50 ₾", priceNum: 19.5 },
+        ],
+      },
       { ka: "ლობიანი (საშუალო)", en: "Lobiani (M)", price: "10 ₾", priceNum: 10, image: lobiani.url },
-      { ka: "აჭარული ლობიანი (პატარა)", en: "Adjaran Lobiani (S)", price: "10 ₾", priceNum: 10, image: adjaruliLobiani.url },
-      { ka: "აჭარული ლობიანი (საშუალო)", en: "Adjaran Lobiani (M)", price: "12 ₾", priceNum: 12, image: adjaruliLobiani.url },
-      { ka: "აჭარული ლობიანი (დიდი)", en: "Adjaran Lobiani (L)", price: "14 ₾", priceNum: 14, image: adjaruliLobiani.url },
+      {
+        ka: "აჭარული ლობიანი",
+        en: "Adjaran Lobiani",
+        image: adjaruliLobiani.url,
+        sizes: [
+          { ka: "პატარა", en: "S", price: "10 ₾", priceNum: 10 },
+          { ka: "საშუალო", en: "M", price: "12 ₾", priceNum: 12 },
+          { ka: "დიდი", en: "L", price: "14 ₾", priceNum: 14 },
+        ],
+      },
       { ka: "კუბდარი", en: "Kubdari", price: "17 ₾", priceNum: 17, image: kudari.url },
       { ka: "ჩებურეკი", en: "Chebureki", price: "6 ₾", priceNum: 6, image: chebureki.url },
       { ka: "აჩმა", en: "Achma", price: "8.50 ₾", priceNum: 8.5, image: achma.url },
       { ka: "კარტოფილი ფრი", en: "French Fries", price: "4 ₾", priceNum: 4 },
       { ka: "პონჩიკი", en: "Ponchiki (Donut)", price: "3 ₾", priceNum: 3 },
-    ],
+    ] as MenuItem[],
   },
   {
     key: "sec_pizza" as const,
@@ -64,7 +91,7 @@ const menuSections = [
       { ka: "პიცა პეპერონი", en: "Pepperoni", price: "25 ₾", priceNum: 25, image: pepperoni.url },
       { ka: "პიცა კაპრიჩოზა", en: "Capricciosa", price: "28 ₾", priceNum: 28 },
       { ka: "პიცა ოთხი ყველი", en: "Four Cheese", price: "31.50 ₾", priceNum: 31.5, image: fourCheese.url },
-    ],
+    ] as MenuItem[],
   },
   {
     key: "sec_sweets" as const,
@@ -86,7 +113,7 @@ const menuSections = [
       { ka: "ჭიქის ნამცხვარი", en: "Cup Cake", price: "6 ₾", priceNum: 6 },
       { ka: "რაფაელო", en: "Raffaello", price: "6.50 ₾", priceNum: 6.5 },
       { ka: "მინი ტორტი", en: "Mini Cake", price: "6.50 ₾", priceNum: 6.5 },
-    ],
+    ] as MenuItem[],
   },
   {
     key: "sec_coffee" as const,
@@ -99,7 +126,7 @@ const menuSections = [
       { ka: "კაპუჩინო", en: "Cappuccino", price: "7.50 ₾", priceNum: 7.5 },
       { ka: "ცივი ყავა", en: "Iced Coffee", price: "6 ₾", priceNum: 6 },
       { ka: "ცივი ყავა ნაყინით", en: "Iced Coffee with Ice Cream", price: "8 ₾", priceNum: 8 },
-    ],
+    ] as MenuItem[],
   },
   {
     key: "sec_tea" as const,
@@ -111,9 +138,31 @@ const menuSections = [
       { ka: "მწვანე ჩაი ჟასმინით", en: "Jasmine Green Tea", price: "2 ₾", priceNum: 2 },
       { ka: "საფირმო ჩაი", en: "Signature Tea", price: "3 ₾", priceNum: 3 },
       { ka: "პიტნის ჩაი", en: "Mint Tea", price: "2 ₾", priceNum: 2 },
-    ],
+    ] as MenuItem[],
   },
 ];
+
+function flattenItems(sections: typeof menuSections) {
+  const flat: { ka: string; en: string; price: string; priceNum: number; image?: string }[] = [];
+  for (const section of sections) {
+    for (const item of section.items) {
+      if ("sizes" in item && item.sizes) {
+        for (const size of item.sizes) {
+          flat.push({
+            ka: `${item.ka} (${size.ka})`,
+            en: `${item.en} (${size.en})`,
+            price: size.price,
+            priceNum: size.priceNum,
+            image: item.image,
+          });
+        }
+      } else {
+        flat.push(item as { ka: string; en: string; price: string; priceNum: number; image?: string });
+      }
+    }
+  }
+  return flat;
+}
 
 type CartMap = Record<string, number>;
 
@@ -125,7 +174,8 @@ function MenuPage() {
   const [address, setAddress] = useState("");
   const [phone, setPhone] = useState("");
 
-  const allItems = menuSections.flatMap((s) => s.items);
+  const allItems = flattenItems(menuSections);
+
   const add = (key: string) => setCart((c) => ({ ...c, [key]: (c[key] || 0) + 1 }));
   const sub = (key: string) =>
     setCart((c) => {
@@ -188,6 +238,66 @@ function MenuPage() {
                 </div>
                 <div className="space-y-3">
                   {section.items.map((item) => {
+                    if ("sizes" in item && item.sizes) {
+                      return (
+                        <div key={item.ka} className="border-b border-border pb-3 last:border-b-0">
+                          <div className="flex items-start justify-between gap-4">
+                            <div className="flex items-start gap-3 min-w-0">
+                              {item.image ? (
+                                <img
+                                  src={item.image}
+                                  alt={item.en}
+                                  loading="lazy"
+                                  className="h-14 w-14 shrink-0 rounded-md object-cover shadow-sm"
+                                />
+                              ) : null}
+                              <h3 className="font-semibold text-foreground">{lang === "en" ? item.en : item.ka}</h3>
+                            </div>
+                          </div>
+                          <div className="mt-2 flex flex-wrap gap-2">
+                            {item.sizes.map((size) => {
+                              const key = `${item.ka} (${size.ka})`;
+                              const qty = cart[key] || 0;
+                              return (
+                                <div key={size.ka} className="flex items-center gap-2 rounded-full bg-primary/10 px-3 py-1">
+                                  <span className="text-sm font-medium text-foreground">
+                                    {lang === "en" ? size.en : size.ka}
+                                  </span>
+                                  <span className="text-sm font-bold text-primary">{size.price}</span>
+                                  {qty > 0 ? (
+                                    <div className="flex items-center gap-1">
+                                      <button
+                                        onClick={() => sub(key)}
+                                        className="flex h-5 w-5 items-center justify-center rounded-full bg-background text-primary hover:bg-primary hover:text-primary-foreground"
+                                        aria-label="Remove"
+                                      >
+                                        <Minus className="h-3 w-3" />
+                                      </button>
+                                      <span className="min-w-[1.25rem] text-center text-sm font-bold">{qty}</span>
+                                      <button
+                                        onClick={() => add(key)}
+                                        className="flex h-5 w-5 items-center justify-center rounded-full bg-primary text-primary-foreground hover:opacity-90"
+                                        aria-label="Add"
+                                      >
+                                        <Plus className="h-3 w-3" />
+                                      </button>
+                                    </div>
+                                  ) : (
+                                    <button
+                                      onClick={() => add(key)}
+                                      className="flex h-5 w-5 items-center justify-center rounded-full bg-primary text-primary-foreground hover:opacity-90"
+                                      aria-label="Add"
+                                    >
+                                      <Plus className="h-3 w-3" />
+                                    </button>
+                                  )}
+                                </div>
+                              );
+                            })}
+                          </div>
+                        </div>
+                      );
+                    }
                     const qty = cart[item.ka] || 0;
                     return (
                       <div key={item.ka} className="flex items-start justify-between gap-4 border-b border-border pb-3 last:border-b-0">
