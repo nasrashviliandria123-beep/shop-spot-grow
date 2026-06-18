@@ -10,6 +10,7 @@ export const translations: Dict = {
   nav_menu: { ka: "მენიუ", en: "Menu" },
   nav_about: { ka: "ჩვენ შესახებ", en: "About" },
   nav_contact: { ka: "კონტაქტი", en: "Contact" },
+  nav_review: { ka: "დატოვე შეფასება", en: "Leave a Review" },
   call: { ka: "დარეკვა", en: "Call" },
   open_menu: { ka: "მენიუს გახსნა", en: "Open menu" },
   lang_toggle: { ka: "EN", en: "ქა" },
