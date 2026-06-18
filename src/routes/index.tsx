@@ -62,18 +62,6 @@ function HomePage() {
               Bakers Bros
             </h1>
             <p className="mt-5 text-lg leading-relaxed text-cream/90 text-balance">{t("hero_p")}</p>
-            <div className="mt-6 flex flex-wrap items-center justify-center gap-4 text-sm text-cream/80">
-              <span className="inline-flex items-center gap-1.5">
-                <Clock className="h-4 w-4" /> {t("open_until")}
-              </span>
-              <span className="inline-flex items-center gap-1.5">
-                <MapPin className="h-4 w-4" /> {t("location")}
-              </span>
-            </div>
-            <div className="mt-4 inline-flex items-center gap-2 rounded-full bg-bread/20 px-3 py-1 text-sm font-medium text-butter backdrop-blur-sm">
-              <Star className="h-3.5 w-3.5 fill-butter text-butter" />
-              {t("rating_badge")}
-            </div>
             <div className="mt-6 flex flex-col items-center justify-center gap-3 sm:flex-row">
               <Link to="/menu" className="btn-primary w-full sm:w-auto">
                 🛒 {t("order_online")}
@@ -86,6 +74,18 @@ function HomePage() {
                 <Phone className="h-4 w-4" />
                 {t("call")}
               </a>
+            </div>
+            <div className="mt-4 inline-flex items-center gap-2 rounded-full bg-bread/20 px-3 py-1 text-sm font-medium text-butter backdrop-blur-sm">
+              <Star className="h-3.5 w-3.5 fill-butter text-butter" />
+              {t("rating_badge")}
+            </div>
+            <div className="mt-6 flex flex-wrap items-center justify-center gap-4 text-sm text-cream/80">
+              <span className="inline-flex items-center gap-1.5">
+                <Clock className="h-4 w-4" /> {t("open_until")}
+              </span>
+              <span className="inline-flex items-center gap-1.5">
+                <MapPin className="h-4 w-4" /> {t("location")}
+              </span>
             </div>
           </div>
         </div>
