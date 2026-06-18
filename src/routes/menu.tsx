@@ -226,7 +226,7 @@ const menuSections = [
       { ka: "ფორთოხლის ნამცხვარი", en: "Orange Cake", price: " ", priceNum: 4, image: orangeCake.url, orderOnly: true },
       { ka: "ბანანის კექსი", en: "Banana Cake", price: " ", priceNum: 10, image: banana.url, orderOnly: true },
       { ka: "მედოვიკი ნაჭერი", en: "Medovik Slice", price: "5.50 ₾", priceNum: 5.5, image: medovik.url },
-      { ka: "სნიკერსი", en: "Snickers Cake", price: " ", priceNum: 6, image: snickers.url },
+      { ka: "სნიკერსი", en: "Snickers Cake", price: "6 ₾", priceNum: 6, image: snickers.url },
       { ka: "ოპიუმი", en: "Opium Cake", price: "5.50 ₾", priceNum: 5.5, image: opium.url },
       { ka: "შოკოლადის ნამცხვარი", en: "Chocolate Cake", price: "6 ₾", priceNum: 6, image: chocolateCake.url },
       { ka: "წითელი ხავერდი", en: "Red Velvet", price: "7 ₾", priceNum: 7, image: redVelvet.url },
