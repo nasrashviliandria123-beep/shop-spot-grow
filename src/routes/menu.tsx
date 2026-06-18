@@ -12,6 +12,12 @@ import margherita from "../assets/menu/margherita.jpg.asset.json";
 import achma from "../assets/menu/achma.jpg.asset.json";
 import chebureki from "../assets/menu/chebureki.jpg.asset.json";
 import kudari from "../assets/menu/kudari.jpg.asset.json";
+import imeruli from "../assets/menu/imeruli.jpg.asset.json";
+import megruli from "../assets/menu/megruli.jpg.asset.json";
+import lazuri from "../assets/menu/lazuri.webp.asset.json";
+import adjaruli from "../assets/menu/adjaruli.jpg.asset.json";
+import lobiani from "../assets/menu/lobiani.jpg.asset.json";
+import adjaruliLobiani from "../assets/menu/adjaruli-lobiani.jpg.asset.json";
 
 export const Route = createFileRoute("/menu")({
   head: () => ({
