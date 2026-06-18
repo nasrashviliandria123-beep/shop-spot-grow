@@ -1,22 +1,7 @@
-## შეფასებების სისტემა (Reviews)
+Make the address field optional in the order/checkout form on the menu page.
 
-### რა უნდა ავაშენოთ
-1. **"დატოვეთ შეფასება" ღილაკი** — მენიუს ზედა ნაწილში
-2. **შეფასების ფორმა (მოდალი)** — ვარსკვლავებით რეიტინგი + ტექსტური გამოხმაურება + სახელი
-3. **ბაზაში შენახვა** — Lovable Cloud-ში (Supabase) reviews ცხრილი
-4. **შეფასებების გამოჩენა** — მენიუს ქვემოთ ან ცალკე სექციად ვებსაიტზე
+Changes in `src/routes/menu.tsx`:
+- Remove `!address` from the checkout button `disabled` condition (line 457), so the user can place an order with name and phone only.
+- Update the WhatsApp message composition in `sendOrder` (around line 220-222) so the address line is only included if the user actually entered an address. If the address is empty, the message will omit that line entirely rather than sending a blank value.
 
-### ტექნიკური დეტალები
-- `reviews` ცხრილი: `id`, `name`, `rating (1-5)`, `comment`, `created_at`
-- TanStack server functions: `getReviews`, `createReview`
-- RLS policy: ყველას შეუძლია წაკითხვა, მხოლოდ ავტორიზებულებს — დამატება (ან public insert ანონიმურად)
-- UI: ვარსკვლავების რეიტინგი, საშუალო რეიტინგის გამოჩენა, კარტების სია
-
-### ნაბიჯები
-1. Supabase migration — `reviews` ცხრილი + RLS + GRANT
-2. Server functions — `getReviews.functions.ts`, `createReview.functions.ts`
-3. Menu თავიდან — "დატოვეთ შეფასება" ღილაკი + მოდალი
-4. Reviews section component — არსებული შეფასებების ჩვენება მენიუს ქვეშ
-5. საშუალო რეიტინგის გამოჩენა ჰეროზე ან მენიუში
-
-სურთ ეს გეგმა განხორციელება?
+This is a minimal, safe change affecting only frontend presentation and validation logic. No backend or database changes are needed.

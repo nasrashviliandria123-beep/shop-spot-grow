@@ -218,8 +218,8 @@ function MenuPage() {
       lines.join("\n") +
       `\n\n${lang === "en" ? "Total" : "ჯამი"}: ${totalPrice.toFixed(2)} ₾\n\n` +
       `${lang === "en" ? "Name" : "სახელი"}: ${name}\n` +
-      `${lang === "en" ? "Phone" : "ტელეფონი"}: ${phone}\n` +
-      `${lang === "en" ? "Address" : "მისამართი"}: ${address}`;
+      `${lang === "en" ? "Phone" : "ტელეფონი"}: ${phone}` +
+      (address ? `\n${lang === "en" ? "Address" : "მისამართი"}: ${address}` : "");
     const url = `https://wa.me/995511109490?text=${encodeURIComponent(msg)}`;
     window.open(url, "_blank");
   };
@@ -449,12 +449,12 @@ function MenuPage() {
               <input
                 value={address}
                 onChange={(e) => setAddress(e.target.value)}
-                placeholder={lang === "en" ? "Delivery address" : "მისამართი"}
+                placeholder={lang === "en" ? "Delivery address (optional)" : "მისამართი (არასავალდებულო)"}
                 className="w-full rounded-lg border border-border bg-background px-3 py-2 text-sm"
               />
               <button
                 onClick={sendOrder}
-                disabled={!name || !phone || !address}
+                disabled={!name || !phone}
                 className="btn-primary w-full justify-center disabled:opacity-50"
               >
                 {lang === "en" ? "Send order via WhatsApp" : "გაგზავნე შეკვეთა WhatsApp-ით"}
