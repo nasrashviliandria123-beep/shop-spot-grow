@@ -19,6 +19,9 @@ import lazuri from "../assets/menu/lazuri.webp.asset.json";
 import adjaruli from "../assets/menu/adjaruli.jpg.asset.json";
 import lobiani from "../assets/menu/lobiani.jpg.asset.json";
 import adjaruliLobiani from "../assets/menu/adjaruli-lobiani.jpg.asset.json";
+import fries from "../assets/menu/fries.jpg.asset.json";
+import ponchiki from "../assets/menu/ponchiki.jpg.asset.json";
+import baklava from "../assets/menu/baklava.webp.asset.json";
 
 export const Route = createFileRoute("/menu")({
   head: () => ({
@@ -79,8 +82,8 @@ const menuSections = [
       { ka: "კუბდარი", en: "Kubdari", price: "17 ₾", priceNum: 17, image: kudari.url },
       { ka: "ჩებურეკი", en: "Chebureki", price: "6 ₾", priceNum: 6, image: chebureki.url },
       { ka: "აჩმა", en: "Achma", price: "8.50 ₾", priceNum: 8.5, image: achma.url },
-      { ka: "კარტოფილი ფრი", en: "French Fries", price: "4 ₾", priceNum: 4 },
-      { ka: "პონჩიკი", en: "Ponchiki (Donut)", price: "3 ₾", priceNum: 3 },
+      { ka: "კარტოფილი ფრი", en: "French Fries", price: "4 ₾", priceNum: 4, image: fries.url },
+      { ka: "პონჩიკი", en: "Ponchiki (Donut)", price: "3 ₾", priceNum: 3, image: ponchiki.url },
     ] as MenuItem[],
   },
   {
@@ -101,7 +104,7 @@ const menuSections = [
       { ka: "შუ", en: "Choux", price: "4 ₾", priceNum: 4, image: shu.url },
       { ka: "ეკლერი", en: "Éclair", price: "4 ₾", priceNum: 4, image: eclair.url },
       { ka: "სიგარეტი", en: "Sigareti (Rolled Pastry)", price: "3.50 ₾", priceNum: 3.5, image: sigareti.url },
-      { ka: "ფახლავა", en: "Baklava", price: "5 ₾", priceNum: 5 },
+      { ka: "ფახლავა", en: "Baklava", price: "5 ₾", priceNum: 5, image: baklava.url },
       { ka: "ფორთოხლის ნამცხვარი", en: "Orange Cake", price: "4 ₾", priceNum: 4 },
       { ka: "ბანანის კექსი", en: "Banana Cake", price: "10 ₾", priceNum: 10 },
       { ka: "მედოვიკი ნაჭერი", en: "Medovik Slice", price: "5.50 ₾", priceNum: 5.5 },
