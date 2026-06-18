@@ -22,6 +22,15 @@ import adjaruliLobiani from "../assets/menu/adjaruli-lobiani.jpg.asset.json";
 import fries from "../assets/menu/fries.jpg.asset.json";
 import ponchiki from "../assets/menu/ponchiki.jpg.asset.json";
 import baklava from "../assets/menu/baklava.webp.asset.json";
+import raffaello from "../assets/menu/raffaello.jpg.asset.json";
+import tart from "../assets/menu/tart.webp.asset.json";
+import redVelvet from "../assets/menu/red-velvet.jpg.asset.json";
+import chocolateCake from "../assets/menu/chocolate-cake.jpg.asset.json";
+import opium from "../assets/menu/opium.jpg.asset.json";
+import snickers from "../assets/menu/snickers.jpg.asset.json";
+import medovik from "../assets/menu/medovik.jpg.asset.json";
+import banana from "../assets/menu/banana.jpg.asset.json";
+import orangeCake from "../assets/menu/orange-cake.jpg.asset.json";
 
 export const Route = createFileRoute("/menu")({
   head: () => ({
