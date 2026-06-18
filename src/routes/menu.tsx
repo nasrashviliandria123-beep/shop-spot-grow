@@ -110,8 +110,8 @@ const menuSections = [
         en: "Adjaran Lobiani",
         image: adjaruliLobiani.url,
         sizes: [
-          { ka: "პატარა", en: "S", price: "17.50 ₾", priceNum: 17.5 },
-          { ka: "საშუალო", en: "M", price: "23 ₾", priceNum: 23 },
+          { ka: "პატარა", en: "S", price: "5.00 ₾", priceNum: 5 },
+          { ka: "საშუალო", en: "M", price: "12 ₾", priceNum: 12 },
           { ka: "დიდი", en: "L", price: "30.50 ₾", priceNum: 30.5 },
         ],
       },
@@ -120,8 +120,8 @@ const menuSections = [
         en: "Kubdari",
         image: kudari.url,
         sizes: [
-          { ka: "პატარა", en: "S", price: "1 ₾", priceNum: 1 },
-          { ka: "საშუალო", en: "M", price: "1 ₾", priceNum: 1 },
+          { ka: "პატარა", en: "S", price: "19.50 ₾", priceNum: 19.5 },
+          { ka: "საშუალო", en: "M", price: "19.50 ₾", priceNum: 19.5 },
           { ka: "დიდი", en: "L", price: "21 ₾", priceNum: 21 },
         ],
       },
@@ -131,7 +131,7 @@ const menuSections = [
         image: chebureki.url,
         sizes: [
           { ka: "პატარა", en: "S", price: "5 ₾", priceNum: 5 },
-          { ka: "საშუალო", en: "M", price: "12 ₾", priceNum: 12 },
+          { ka: "საშუალო", en: "M", price: "6.50 ₾", priceNum: 6.5 },
           { ka: "დიდი", en: "L", price: "19.50 ₾", priceNum: 19.5 },
         ],
       },
