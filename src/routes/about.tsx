@@ -48,9 +48,9 @@ function AboutPage() {
 
       <section className="section-padding relative overflow-hidden bg-espresso">
         <div className="absolute inset-0 bg-gradient-to-br from-ember/10 via-transparent to-amber-glow/10" />
-        <div className="mx-auto max-w-7xl px-4 md:px-6">
+        <div className="relative mx-auto max-w-7xl px-4 md:px-6">
           <div className="mx-auto max-w-2xl text-center">
-            <h2 className="text-3xl font-bold text-foreground md:text-4xl text-balance" style={{ fontFamily: "'Lora', serif" }}>
+            <h2 className="text-3xl font-bold text-cream md:text-4xl text-balance" style={{ fontFamily: "'Lora', serif" }}>
               {t("values_h2")}
             </h2>
           </div>
