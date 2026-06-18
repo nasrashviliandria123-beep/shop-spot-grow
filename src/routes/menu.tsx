@@ -39,6 +39,8 @@ import ideali from "../assets/menu/ideali.jpg.asset.json";
 import spartak from "../assets/menu/spartak.jpg.asset.json";
 import irisi from "../assets/menu/irisi.jpg.asset.json";
 import imeruliLobiani from "../assets/menu/imeruli-lobiani.jpg.asset.json";
+import adjaruliNew from "../assets/menu/adjaruli-new.jpg.asset.json";
+import naxervadFenovani from "../assets/menu/naxervad-fenovani.jpg.asset.json";
 
 export const Route = createFileRoute("/menu")({
   head: () => ({
@@ -106,7 +108,7 @@ const menuSections = [
       {
         ka: "აჭარული ხაჭაპური",
         en: "Adjaran Khachapuri",
-        image: adjaruli.url,
+        image: adjaruliNew.url,
         sizes: [
           { ka: "მინი", en: "Mini", price: "12 ₾", priceNum: 12 },
           { ka: "პატარა", en: "S", price: "16.00 ₾", priceNum: 16 },
@@ -132,7 +134,7 @@ const menuSections = [
       {
         ka: "ნახერვად ფენოვანი ხაჭაპური",
         en: "Half-Layered Khachapuri",
-        image: lobiani.url,
+        image: naxervadFenovani.url,
         price: "6.50 ₾",
         priceNum: 6.5,
       },
