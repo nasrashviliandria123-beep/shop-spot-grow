@@ -92,7 +92,7 @@ const menuSections = [
       { ka: "ჩებურეკი", en: "Chebureki", price: "6 ₾", priceNum: 6, image: chebureki.url },
       { ka: "აჩმა", en: "Achma", price: "8.50 ₾", priceNum: 8.5, image: achma.url },
       { ka: "კარტოფილი ფრი", en: "French Fries", price: "4 ₾", priceNum: 4, image: fries.url },
-      { ka: "პონჩიკი", en: "Ponchiki (Donut)", price: "3 ₾", priceNum: 3, image: ponchiki.url },
+      { ka: "ფუნჩულა", en: "Ponchiki (Donut)", price: "3 ₾", priceNum: 3, image: ponchiki.url },
     ] as MenuItem[],
   },
   {
