@@ -64,7 +64,7 @@ function HomePage() {
             <p className="mt-5 text-lg leading-relaxed text-cream/90 text-balance">{t("hero_p")}</p>
             <div className="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row">
               <Link to="/menu" className="btn-primary w-full sm:w-auto">
-                🛒 Order Online
+                🛒 {t("order_online")}
                 <ChevronRight className="h-4 w-4" />
               </Link>
               <Link to="/menu" className="btn-gold w-full sm:w-auto">

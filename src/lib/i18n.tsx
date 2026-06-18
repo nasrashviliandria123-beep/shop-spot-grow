@@ -27,6 +27,7 @@ export const translations: Dict = {
     en: "Unforgettable taste from the brothers.",
   },
   view_menu: { ka: "იხილეთ მენიუ", en: "View menu" },
+  order_online: { ka: "ონლაინ შეკვეთა", en: "Order Online" },
   open_until: { ka: "ღია 21:30-მდე", en: "Open until 9:30 PM" },
   location: { ka: "საგურამო, საქართველო", en: "Saguramo, Georgia" },
   testimonials_h2: { ka: "რას ამბობენ ჩვენი სტუმრები", en: "What our guests say" },
