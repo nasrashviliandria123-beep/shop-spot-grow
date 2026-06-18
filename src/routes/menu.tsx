@@ -184,7 +184,7 @@ const menuSections = [
     key: "sec_coffee" as const,
     icon: <Coffee className="h-5 w-5" />,
     items: [
-      { ka: "ყავა თურქული", en: "Turkish Coffee", price: "4 ₾", priceNum: 4 },
+      { ka: "ყავა თურქული", en: "Turkish Coffee", price: " ₾", priceNum: 4 },
       { ka: "ამერიკანო", en: "Americano", price: "6 ₾", priceNum: 6 },
       { ka: "ესპრესო", en: "Espresso", price: "7 ₾", priceNum: 7 },
       { ka: "ლატე", en: "Latte", price: "9 ₾", priceNum: 9 },
