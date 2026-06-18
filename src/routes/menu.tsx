@@ -144,6 +144,24 @@ const menuSections = [
         price: "3 ₾",
         priceNum: 3,
       },
+      {
+        ka: "ხაჭაპური შამფურზე",
+        en: "Khachapuri on Skewer",
+        price: " ",
+        priceNum: 0,
+      },
+      {
+        ka: "ლობიანი შამფურზე",
+        en: "Lobiani on Skewer",
+        price: " ",
+        priceNum: 0,
+      },
+      {
+        ka: "ხორცის ღვეზელი",
+        en: "Meat Pie",
+        price: " ",
+        priceNum: 0,
+      },
 
     ] as MenuItem[],
   },
