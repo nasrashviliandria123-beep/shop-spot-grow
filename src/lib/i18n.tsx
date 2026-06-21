@@ -158,8 +158,8 @@ export const translations: Dict = {
   },
   menu_h1: { ka: "ჩვენი მენიუ", en: "Our menu" },
   menu_hero_p: {
-    ka: "ნამდვილი ქართული გამოცხობა — ხაჭაპური, ახალი ნამცხვრები, პიცა და საფირმო ყავა. ახლადგამომცხვარი ყოველ დილით.",
-    en: "Authentic Georgian baking — khachapuri, fresh pastries, pizza, and specialty coffee. Freshly baked every morning.",
+    ka: "ნატურალური ინგრედიენტებით მომზადებული, ქართული კერძები.",
+    en: "Georgian dishes made with natural ingredients.",
   },
   menu_avg: { ka: "საშუალოდ: 10–20 ₾ ერთ პერსონაზე", en: "Average: 10–20 ₾ per person" },
   sec_khach: { ka: "ხაჭაპური და ცომეული", en: "Khachapuri & Pastries" },
