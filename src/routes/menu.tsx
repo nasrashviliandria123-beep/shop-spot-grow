@@ -181,6 +181,12 @@ const menuSections = [
         priceNum: 4,
       },
       {
+        ka: "გურული ღვეზელი",
+        en: "Gurian Pie",
+        price: "12 ₾",
+        priceNum: 12,
+      },
+      {
         ka: "კარტოფილი ფრი",
         en: "French Fries",
         image: fries.url,
